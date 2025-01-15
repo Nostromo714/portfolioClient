@@ -29,52 +29,89 @@ const HomePage = () => {
             <i className='fa-solid fa-code text-6xl'></i>
         </div>
     </section>
+    
+        
+               
 
-            {/* Second section { My expertise }*/}
-            <section className='h-screen flex justify-center items-center'>
-            <div className="flex space-x-4 p-4">
+            {/* Second section { My Boxes of expertise }*/}
+     <section className='h-screen flex flex-col justify-center items-center p-4'>
+
+            {/* Header */}
+     <h1 className="text-8xl tracking-tight max-w-full p-10 text-center" 
+          style={{
+            fontFamily: 'Poppins, sans-serif',
+            fontSize: '8rem',
+            textShadow: '3px 3px 5px rgba(14, 14, 22, 0.91), 0 0 25px rgba(17, 9, 21, 0.98), 0 0 50px rgba(31, 28, 66, 0.61)'
+          }}>
+          MY EXPERTISE
+        </h1> 
+
+        <section className="flex flex-col sm:flex-row sm:flex-wrap mx-auto max-w-screen-lg mt-10">
       {/* Box 1 */}
-      <div className="flex-1 p-6 bg-blue-500 text-white rounded-lg shadow-md">
-        <h2 className="text-xl font-semibold">Box 1</h2>
-        <p>Content for box 1</p>
+      <div className="flex-1 p-6 bg-opacity-50 border-2 border-black text-white shadow-md">
+        <h2 className="text-xl font-semibold">Software Development</h2>
+        <p>Experenced in developiing both frount and backend technolies. JavaScript, Python,   </p>
       </div>
 
       {/* Box 2 */}
-      <div className="flex-1 p-6 bg-green-500 text-white rounded-lg shadow-md">
-        <h2 className="text-xl font-semibold">Box 2</h2>
-        <p>Content for box 2</p>
+      <div className="flex-1 p-6 bg-opacity-50 border-2 border-black text-white shadow-md">
+        <h2 className="text-xl font-semibold">Full-Stack Dev MERN Stack</h2>
+        <p>Passionate about UI/UX. Over one year experance in html, css, js react and nodeJS frameworks</p>
       </div>
 
       {/* Box 3 */}
-      <div className="flex-1 p-6 bg-red-500 text-white rounded-lg shadow-md">
-        <h2 className="text-xl font-semibold">Box 3</h2>
-        <p>Content for box 3</p>
+      <div className="flex-1 p-6  bg-opacity-50 border-2 border-black  text-white shadow-md">
+        <h2 className="text-xl font-semibold">Web Design</h2>
+        <p>Skilled in creating and desiging with tailwiind css </p>
       </div>
    
      
-    </div>
+    </section>
             
             </section>
 
             {/* Third section */}
-            <section className='h-screen flex justify-center items-center'>
+            <section className='h-screen flex-2 justify-center items-center'  style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+
+            {/* Header */}    
+            <h1 className="text-8xl tracking-tight max-w-full p-10 " 
+          style={{
+            fontFamily: 'Poppins, sans-serif',
+            fontSize: '8rem',
+            textShadow: '3px 3px 5px rgba(14, 14, 22, 0.91), 0 0 25px rgba(17, 9, 21, 0.98), 0 0 50px rgba(31, 28, 66, 0.61)'
+          }}>
+          MY WORK
+        </h1> 
+        <p className='text-lg'> Built and deployed scalable, responsive web apps with real-time features, focusing on high performance and intuitive interfaces using React.js, Node.js, and MongoDB. <br /> Passionate about creating dynamic, user-centered experiences with secure authentication and efficient data management. Continuously driven by problem-solving and learning to create maintainable, robust code.</p>
+
+        {/*  */}    
 
             </section>
+            {/* Right content (Image) */}
+  <div className="image-content" style={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
+    <img src="your-image-url.jpg" alt="Description" style={{ maxWidth: '300px', height: 'auto' }} />
+  </div>
+
 
             {/* Fourth section */}
             <section className='h-screen flex justify-center items-center'>
 
             </section>
 
-            {/* Fifth section */}
+            {/* Professional Experience */}
+            <section className='h-screen flex justify-center items-center'>
+           {/* Box 1 */}
+      <div className="flex-1 p-6 bg-opacity-50 border-2 border-black text-white shadow-md">
+        <h2 className="text-xl font-semibold">Software Development</h2>
+        <p>Experenced in developiing both frount and backend technolies. JavaScript, Python,   </p>
+      </div>
+            </section>
+
+            {/* Testimonials */}
             <section className='h-screen flex justify-center items-center'>
 
             </section>
-
-            {/* Sixth section */}
-            <section className='h-screen flex justify-center items-center'>
-
-            </section>
+            <footer></footer>
         </div>
   ); 
 };

@@ -98,7 +98,7 @@ const HomePage = () => {
 
             </section>
 
-            {/* Professional Experience */}
+            {/* Fifth Section Professional Experience */}
             <section className='h-screen flex justify-center items-center'>
            {/* Box 1 */}
       <div className="flex-1 p-6 bg-opacity-50 border-2 border-black text-white shadow-md">

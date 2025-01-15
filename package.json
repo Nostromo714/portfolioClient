@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "cra-template": "1.2.0",
     "font-awesome": "^4.7.0",
     "react": "^18.3.1",

@@ -48,7 +48,7 @@ const HomePage = () => {
           MY EXPERTISE
         </h1>
 
-        <section className="flex flex-col sm:flex-row sm:flex-wrap mx-auto max-w-screen-lg mt-10">
+        <div className="flex flex-col sm:flex-row sm:flex-wrap mx-auto max-w-screen-lg mt-10">
           {/* Box 1 */}
           <div className="flex-1 p-6 bg-opacity-50 border-2 border-black text-white shadow-md">
             <h2 className="text-xl font-semibold">Software Development</h2>
@@ -72,8 +72,8 @@ const HomePage = () => {
             <h2 className="text-xl font-semibold">Web Design</h2>
             <p>Skilled in creating and desiging with tailwiind css </p>
           </div>
+          </div>
         </section>
-      </section>
 
       {/* 3rd section ( My Work ) */}
       <section className="h-screen flex space-x-10 px-10">
@@ -89,7 +89,7 @@ const HomePage = () => {
         {/* Header */}
           MY WORK
         </h1>
-        <div className=" tracking-tight max-w-full p-10">
+        <div className=" tracking-tight border-2 border-black max-w-full p-10">
         <p>
           Built and deployed scalable, responsive web apps with real-time
           features, focusing on high performance and intuitive interfaces using
@@ -101,10 +101,10 @@ const HomePage = () => {
         </div>
         </div>
         {/*  */}
-      </section>
+     
       {/* Right content (Image) */}
       <div
-        className="image-content"
+        className="image-content border-2 border-black p-10"
         style={{ flex: 1, display: "flex", justifyContent: "center" }}
       >
         <img
@@ -113,12 +113,16 @@ const HomePage = () => {
           style={{ maxWidth: "300px", height: "auto" }}
         />
       </div>
+      </section>
 
-      {/* Fourth section */}
-      <section className="h-screen flex justify-center items-center"></section>
+      {/* Fourth section ( Gallery )*/}
+      <section className="h-screen flex justify-center items-center">
+        {/* this is where gallery will go */}
+      </section>
 
       {/* Fifth Section Professional Experience */}
       {/* Header */}
+      <section className="">
       <h1
         className="text-8xl flex justify-center tracking-tight max-w-full p-10 "
         style={{
@@ -132,7 +136,8 @@ const HomePage = () => {
       </h1>
       
       {/* Using ToggleBox for job experiences */}
-      <section className="flex-col justify-center p-5 items-center">
+      <div className=" flex justify-center w-full max-w-full px-8 py-12">
+      <div className="flex-col justify-center p-5 items-center">
         <ToggleBox
           title="Jr Fullstack Developer Student At Upright Education"
           description="Experienced in developing both front and backend technologies. JavaScript, Python, React, Node.js."
@@ -147,8 +152,9 @@ const HomePage = () => {
           title="Manager for Starbucks at HMSHOST"
           description="Led a team of baristas, maintaining high standards of service and customer interaction while managing day-to-day operations."
         />
+      </div>
+      </div>
       </section>
-         
         
      
 

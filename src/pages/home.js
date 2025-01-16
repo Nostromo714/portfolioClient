@@ -5,7 +5,7 @@ import ToggleBox from "../components/toggleBox";
 const HomePage = () => {
   return (
     <div className="text-white min-h-screen flex flex-col bg-gradient-to-b from-slate-800 via-orange-100 to-black relative">
-      {/* First section*/}
+      {/* 1st section ( My Name )*/}
       <section className="h-screen text-center p-20 ">
         <div className="p-20">
           <h2> &lt; LUCY ELIZABETH /&gt; </h2>
@@ -33,7 +33,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Second section { My Boxes of expertise }*/}
+      {/* 2nd section ( My Boxes of expertise )*/}
       <section className="h-screen flex flex-col justify-center items-center p-4">
         {/* Header */}
         <h1
@@ -75,9 +75,10 @@ const HomePage = () => {
         </section>
       </section>
 
-      {/* Third section */}
-      <section
-        className="h-screen flex-2 justify-center items-center"
+      {/* 3rd section ( My Work ) */}
+      <section className="h-screen flex space-x-10 px-10">
+        <div className="max-w-lg text-center md:text-left">
+            <h1 className=" text-8xl tracking-tight p-10"
         style={{
           display: "flex",
           flexDirection: "row",
@@ -86,19 +87,10 @@ const HomePage = () => {
         }}
       >
         {/* Header */}
-        <h1
-          className="text-8xl tracking-tight max-w-full p-10 "
-          style={{
-            fontFamily: "Poppins, sans-serif",
-            fontSize: "8rem",
-            textShadow:
-              "3px 3px 5px rgba(14, 14, 22, 0.91), 0 0 25px rgba(17, 9, 21, 0.98), 0 0 50px rgba(31, 28, 66, 0.61)",
-          }}
-        >
           MY WORK
         </h1>
-        <p className="text-lg">
-          {" "}
+        <div className=" tracking-tight max-w-full p-10">
+        <p>
           Built and deployed scalable, responsive web apps with real-time
           features, focusing on high performance and intuitive interfaces using
           React.js, Node.js, and MongoDB. <br /> Passionate about creating
@@ -106,7 +98,8 @@ const HomePage = () => {
           efficient data management. Continuously driven by problem-solving and
           learning to create maintainable, robust code.
         </p>
-
+        </div>
+        </div>
         {/*  */}
       </section>
       {/* Right content (Image) */}

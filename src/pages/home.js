@@ -1,5 +1,6 @@
 // /src/pages/home.js
 import React from "react";
+import ToggleBox from "../components/toggleBox";
 
 const HomePage = () => {
   return (
@@ -136,41 +137,31 @@ const HomePage = () => {
       >
         Professional Experience
       </h1>
-      <section className=" flex-col justify-center p-5 items-center">
-        {/* Box 1 */}
-        <div className="p-6 bg-opacity-50 border-2 border-black text-white shadow-md">
-          <h2 className="text-xl font-semibold">
-            {" "}
-            Jr Fullstack Developer Student At Upright Education
-          </h2>
-          <p>
-            Experienced in developing both front and backend technologies.
-            JavaScript, Python,{" "}
-          </p>
-        </div>
+      
+      {/* Using ToggleBox for job experiences */}
+      <section className="flex-col justify-center p-5 items-center">
+        <ToggleBox
+          title="Jr Fullstack Developer Student At Upright Education"
+          description="Experienced in developing both front and backend technologies. JavaScript, Python, React, Node.js."
+        />
 
-        <section className=" flex-col justify-center items-center">
-          {/* Box 2 */}
-          <div className="p-6 bg-opacity-50 border-2 border-black text-white shadow-md">
-            <h2 className="text-xl font-semibold">
-              Assistant F&B Manager At HMSHOST
-            </h2>
-            <p>Experienced in developing a team to run . </p>
-          </div>
-          <section className=" flex-col justify-center items-center">
-            {/* Box 1 */}
-            <div className="p-6 bg-opacity-50 border-2 border-black text-white shadow-md">
-              <h2 className="text-xl font-semibold">
-                Manager for Startbucks with HMShost
-              </h2>
-              <p>Experenced </p>
-            </div>
-          </section>
-        </section>
+        <ToggleBox
+          title="Assistant F&B Manager At HMSHOST"
+          description="Managed a team of food and beverage staff, ensuring smooth operations and high customer satisfaction."
+        />
+
+        <ToggleBox
+          title="Manager for Starbucks at HMSHOST"
+          description="Led a team of baristas, maintaining high standards of service and customer interaction while managing day-to-day operations."
+        />
       </section>
+         
+        
+     
 
       {/* Testimonials */}
       <section className="h-screen flex justify-center items-center"></section>
+
       <footer></footer>
     </div>
   );

@@ -1,7 +1,7 @@
 // /src/pages/home.js
 import React from "react";
 import ToggleBox from "../components/toggleBox";
-
+import pcImage from '../assets/90s_computer.jpg';
 const HomePage = () => {
   return (
     <div className="text-white min-h-screen flex flex-col bg-gradient-to-b from-slate-800 via-orange-100 to-black relative">
@@ -76,7 +76,7 @@ const HomePage = () => {
         </section>
 
       {/* 3rd section ( My Work ) */}
-      <section className="h-screen flex space-x-10 px-10">
+      <section className="h-screen flex flex-col sm:flex-row space-x-10 px-10">
         <div className="max-w-lg text-center md:text-left">
             <h1 className=" text-8xl tracking-tight p-10"
         style={{
@@ -103,14 +103,11 @@ const HomePage = () => {
         {/*  */}
      
       {/* Right content (Image) */}
-      <div
-        className="image-content border-2 border-black p-10"
-        style={{ flex: 1, display: "flex", justifyContent: "center" }}
-      >
+      <div className="flex items-center p-10 ">
         <img
-          src="your-image-url.jpg"
-          alt="Description"
-          style={{ maxWidth: "300px", height: "auto" }}
+            src={pcImage}
+            alt="90s computer"
+            className=" border-2 border-black "
         />
       </div>
       </section>

@@ -1,11 +1,15 @@
 // /src/pages/home.js
 import React from "react";
 import ToggleBox from "../components/toggleBox";
+import ContactForm from '../components/contactForm';
+import Testimonial from "../components/testimonials"
 import pcImage from '../assets/90s_computer.jpg';
 import computerModern from '../assets/computerModern.jpg'
 const HomePage = () => {
   return (
+
     <div className="text-white min-h-screen flex flex-col bg-gradient-to-b from-slate-800 via-orange-100 to-black relative">
+
       {/* 1st section ( My Name )*/}
       <section className="h-screen text-center p-20 ">
         <div className="p-20">
@@ -28,7 +32,6 @@ const HomePage = () => {
             FULL-STACK DEVELOPER, UI-ENGINEER, & DESIGNER
           </p>
         </div>
-
         <div className="mt-auto mb-10">
           <i className="fa-solid fa-code text-6xl"></i>
         </div>
@@ -113,14 +116,14 @@ const HomePage = () => {
       </div>
       </section>
 
-      {/* Fourth section ( Gallery )*/}
-      <section className="h-screen flex justify-center items-center">
+      {/* 4th section ( Gallery )*/}
+      <section className="h-screen flex justify-center items-center border-2 border-black">
         {/* this is where gallery will go */}
       </section>
 
-      {/* Fifth Section Professional Experience */}
+      {/* 5th Section ( Professional Experience ) */}
       {/* Header */}
-      <section className="">
+      <section className="border-2 border-black p-40 ">
       <h1
         className="text-8xl flex justify-center tracking-tight max-w-full p-10 "
         style={{
@@ -154,8 +157,15 @@ const HomePage = () => {
       </div>
       </section>
         
-      {/* Testimonials */}
-      <section className="h-screen flex justify-center items-center"></section>
+      {/* 6th Section (Contact Me) */}
+      <section className="h-screen w-1/2 pd-8 border-2 p-20 ">
+      <div>
+        <ContactForm>
+
+        </ContactForm>
+        </div>
+
+      </section>
 
       <footer></footer>
     </div>

@@ -134,31 +134,26 @@ const HomePage = () => {
       </h1>
       
       {/* Using ToggleBox for job experiences */}
-      <div className=" border-black border-2 justify-center mx-auto px-8 py-12">
-      <div className="border-black border-2 justify-center items-center w-full max-w-4xl mx-auto p-10 ">
+      <div className="flex justify-center ">
+      <div className="border-black border-2 p-6 w-full max-w-4xl mx-auto">
         <ToggleBox
           title="Jr Fullstack Developer Student At Upright Education"
           description="Experienced in developing both front and backend technologies. JavaScript, Python, React, Node.js."
-          className="w-96 mb-6"  // set fixed width (w-96 = 24rm)
         />
 
         <ToggleBox
           title="Assistant F&B Manager At HMSHOST"
           description="Managed a team of food and beverage staff, ensuring smooth operations and high customer satisfaction."
-          className="w-96 mb-6"  // set fixed width (w-96 = 24rm)
         />
 
         <ToggleBox
           title="Manager for Starbucks at HMSHOST"
           description="Led a team of baristas, maintaining high standards of service and customer interaction while managing day-to-day operations."
-          className="w-96 mb-6"  // set fixed width (w-96 = 24rm)
         />
       </div>
       </div>
       </section>
         
-     
-
       {/* Testimonials */}
       <section className="h-screen flex justify-center items-center"></section>
 

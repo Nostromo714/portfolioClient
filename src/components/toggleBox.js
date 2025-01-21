@@ -1,18 +1,16 @@
 
 import React, { useState } from "react";
 
-const ToggleBox = ({ title, description }) => {
+const ToggleBox = ({ title, description, className }) => {
     // State to track if the box is open or closed
     const [isOpen, setIsOpen] = useState(false);
-    const toggleContent = () => {
-        setIsOpen(!isOpen);
-    };
+    
 
 return (
-    <div className="p-6 bg-opacity-50 border-2 border-black text-white shadow-md mb-4">
+    <div className={`p-6 bg-opacity-50 mb-6 border-2 border-black text-white shadow-md  ${className}`}>
         <div
-        onClick={toggleContent}
-        className="cursor-ponter"
+        onClick={() => setIsOpen(!isOpen)}
+        className="cursor-pointer"
         style={{
             display: 'flex',
             justifyContent: 'space-between',
@@ -24,9 +22,12 @@ return (
         </div>
 
         {isOpen && (
-            <div className="mt-4">
+            <div className="mt-6 ">
+                 <div className={`mt-6 p-4 ${isOpen ? 'bg-orange-500' : 'bg-white'}`}> 
+                 {/* Change background color when open */}
                 <p>{description}</p>
                 </div>
+             </div>
         )}
     </div>
 )

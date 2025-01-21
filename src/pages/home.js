@@ -2,6 +2,7 @@
 import React from "react";
 import ToggleBox from "../components/toggleBox";
 import pcImage from '../assets/90s_computer.jpg';
+import computerModern from '../assets/computerModern.jpg'
 const HomePage = () => {
   return (
     <div className="text-white min-h-screen flex flex-col bg-gradient-to-b from-slate-800 via-orange-100 to-black relative">
@@ -105,7 +106,7 @@ const HomePage = () => {
       {/* Right content (Image) */}
       <div className="flex items-center p-10 ">
         <img
-            src={pcImage}
+            src={computerModern}
             alt="90s computer"
             className=" border-2 border-black "
         />
@@ -133,21 +134,24 @@ const HomePage = () => {
       </h1>
       
       {/* Using ToggleBox for job experiences */}
-      <div className=" flex justify-center w-full max-w-full px-8 py-12">
-      <div className="flex-col justify-center p-5 items-center">
+      <div className=" border-black border-2 justify-center mx-auto px-8 py-12">
+      <div className="border-black border-2 justify-center items-center w-full max-w-4xl mx-auto p-10 ">
         <ToggleBox
           title="Jr Fullstack Developer Student At Upright Education"
           description="Experienced in developing both front and backend technologies. JavaScript, Python, React, Node.js."
+          className="w-96 mb-6"  // set fixed width (w-96 = 24rm)
         />
 
         <ToggleBox
           title="Assistant F&B Manager At HMSHOST"
           description="Managed a team of food and beverage staff, ensuring smooth operations and high customer satisfaction."
+          className="w-96 mb-6"  // set fixed width (w-96 = 24rm)
         />
 
         <ToggleBox
           title="Manager for Starbucks at HMSHOST"
           description="Led a team of baristas, maintaining high standards of service and customer interaction while managing day-to-day operations."
+          className="w-96 mb-6"  // set fixed width (w-96 = 24rm)
         />
       </div>
       </div>

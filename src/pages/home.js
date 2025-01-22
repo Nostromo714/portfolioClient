@@ -158,7 +158,7 @@ const HomePage = () => {
       </section>
         
       {/* 6th Section (Contact Me) */}
-      <section className="h-screen w-1/2 pd-8 border-2 p-20 ">
+      <section className=" w-1/2 ">
       <div>
         <ContactForm>
 

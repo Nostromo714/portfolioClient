@@ -44,45 +44,74 @@ const ContactForm = () => {
         }
      };
 
-    return (
-        <div className="contact-form p-4">
-            <h2>Contact Us</h2>
-            <form onSubmit={handleSubmit}>
-                <div className='p-6'>
-                    <label>Name:</label>
-                    <input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
-                <div className='p-6'>
-                    <label>Email:</label>
-                    <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
-                <div className='p-6'>
-                    <label>Message:</label>
-                    <textarea
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                    ></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
-
-            {status && <p>{status}</p>}
+     return (
+        <div className="p-9 contact-form w-full h-screen flex flex-col justify-center">
+            <div className='p-9'>
+          <h1
+            className="text-7xl p-8 tracking-tight border-b-2 border-gray-500 "
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+              textShadow:
+              "3px 3px 5px rgba(13, 13, 17, 0.91), 0 0 25px rgba(17, 9, 21, 0.98), 0 0 50px rgba(31, 28, 66, 0.61)",
+            }}
+          >
+            {/* Header */}
+            Contact
+          </h1>
+      
+          <form onSubmit={handleSubmit} 
+          className=" flex flex-col w-full space-y-6 bg-gradient-to-b from-gray-800 via-orange-100 to-black to-gray-800 bg-slate-900 p-10 justify-center "
+          >
+             {/* Name input */}
+              <input
+                type="text"
+                name="name"
+                id="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                className="p-3 bg-slate-800 w-full"
+                placeholder="Name:"
+              />
+      
+            {/* Email input */}
+              <input
+                type="email"
+                name="email"
+                id="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className=" p-3 bg-slate-800 w-full "
+                placeholder='Email:'
+              />
+      
+            {/* Message input */}
+              <textarea
+                name="message"
+                id="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                className=" p-2 bg-slate-800 w-full "
+                placeholder='Message:'
+              ></textarea>
+      
+            {/* Submit Button */}
+            <button
+              type="submit"
+              className=" px-3 py-2 bg-slate-800 text-gray-400 hover:bg-slate-600" //px-3 py-2 Horizontal and vertical padding to size the button appropriately.
+            >
+              Send Message
+            </button>
+          </form>
+      
+          {status && <p>{status}</p>}
         </div>
-    );
-};
-
-export default ContactForm;
+        </div>
+      );
+    }
+    export default ContactForm;

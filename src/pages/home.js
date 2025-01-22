@@ -2,7 +2,7 @@
 import React from "react";
 import ToggleBox from "../components/toggleBox";
 import ContactForm from '../components/contactForm';
-import Testimonial from "../components/testimonials"
+import Testimonials from "../components/testimonials"
 import pcImage from '../assets/90s_computer.jpg';
 import computerModern from '../assets/computerModern.jpg'
 const HomePage = () => {
@@ -158,13 +158,22 @@ const HomePage = () => {
       </section>
         
       {/* 6th Section (Contact Me) */}
+
       <section className=" w-1/2 ">
       <div>
         <ContactForm>
 
         </ContactForm>
+
+      <section className="flex w-full h-screen">
+      <div className="w-1/2 p-9"> 
+        <ContactForm></ContactForm>
+
         </div>
 
+        <div className="w-1/2 p-9">
+        <Testimonials></Testimonials>
+        </div>
       </section>
 
       <footer></footer>

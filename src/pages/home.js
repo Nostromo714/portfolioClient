@@ -158,9 +158,17 @@ const HomePage = () => {
       </section>
         
       {/* 6th Section (Contact Me) */}
+
+      <section className=" w-1/2 ">
+      <div>
+        <ContactForm>
+
+        </ContactForm>
+
       <section className="flex w-full h-screen">
       <div className="w-1/2 p-9"> 
         <ContactForm></ContactForm>
+
         </div>
 
         <div className="w-1/2 p-9">

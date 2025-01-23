@@ -8,10 +8,10 @@ import computerModern from '../assets/computerModern.jpg'
 const HomePage = () => {
   return (
 
-    <div className="text-white min-h-screen flex flex-col bg-gradient-to-b from-slate-800 via-orange-100 to-black relative">
+    <div className="text-white min-h-screen flex flex-col bg-gradient-to-b from-slate-800 via-orange-100 to-black relative bg-cover">
 
       {/* 1st section ( My Name )*/}
-      <section className="h-screen text-center p-20 ">
+      <section className="h-screen flex-center text-center p-20 ">
         <div className="p-20">
           <h2> &lt; LUCY ELIZABETH /&gt; </h2>
         </div>
@@ -161,13 +161,12 @@ const HomePage = () => {
 
      
 
-      <section className="flex w-full h-screen">
-      <div className="w-1/2 p-9"> 
+      <section className="flex flex-col sm:flex-row justify-between gap-10 p-5">
+        <div className="w-full sm:w-1/2 p-9"> 
         <ContactForm></ContactForm>
-
         </div>
 
-        <div className="w-1/2 p-9">
+        <div className=" w-full sm:w-1/2 p-9">
         <Testimonials></Testimonials>
         </div>
       </section>

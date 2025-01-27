@@ -119,14 +119,14 @@ const HomePage = () => {
       </section>
 
       {/* 4th section ( Gallery )*/}
-      <section className=" flex justify-center ">
+      <section className=" flex item-start h-[500px] ">
         {/* this is where gallery will go */}
         <Carousel data={slides} />
       </section>
 
       {/* 5th Section ( Professional Experience ) */}
       {/* Header */}
-      <section className=" p-40 ">
+      <section className="p-40 ">
       <h1
         className="text-8xl flex justify-center tracking-tight max-w-full p-10 "
         style={{
@@ -161,8 +161,6 @@ const HomePage = () => {
       </section>
         
       {/* 6th Section (Contact Me) */}
-
-     
 
       <section className="flex flex-col sm:flex-row justify-between gap-10 p-5">
         <div className="w-full sm:w-1/2 p-9"> 

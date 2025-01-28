@@ -5,6 +5,9 @@ import ContactForm from '../components/contactForm';
 import Testimonials from "../components/testimonials"
 import pcImage from '../assets/90s_computer.jpg';
 import computerModern from '../assets/computerModern.jpg'
+import { Carousel } from "../components/carousel";
+import { slides } from "../assets/carouselData"
+import { ModalWrapper } from "../components/modalWrapper";
 const HomePage = () => {
   return (
 
@@ -117,13 +120,27 @@ const HomePage = () => {
       </section>
 
       {/* 4th section ( Gallery )*/}
-      <section className="h-screen flex justify-center items-center border-2 border-black">
+      <div className="flex flex-col md:flex-row gap-4 ">
+
+      <section className=" flex  h-[400px] ">
         {/* this is where gallery will go */}
+        <ModalWrapper data={slides} />
+        </section>
+     
+      <section className=" flex h-[400px] ">
+        {/* this is where gallery will go */}
+        <ModalWrapper data={slides} />
       </section>
+
+      <section className=" flex h-[400px] ">
+        {/* this is where gallery will go */}
+        <ModalWrapper data={slides} />
+      </section>
+      </div>
 
       {/* 5th Section ( Professional Experience ) */}
       {/* Header */}
-      <section className="border-2 border-black p-40 ">
+      <section className="p-40 ">
       <h1
         className="text-8xl flex justify-center tracking-tight max-w-full p-10 "
         style={{
@@ -158,8 +175,6 @@ const HomePage = () => {
       </section>
         
       {/* 6th Section (Contact Me) */}
-
-     
 
       <section className="flex flex-col sm:flex-row justify-between gap-10 p-5">
         <div className="w-full sm:w-1/2 p-9"> 

@@ -7,6 +7,7 @@ import pcImage from '../assets/90s_computer.jpg';
 import computerModern from '../assets/computerModern.jpg'
 import { Carousel } from "../components/carousel";
 import { slides } from "../assets/carouselData"
+import { ModalWrapper } from "../components/modalWrapper";
 const HomePage = () => {
   return (
 
@@ -121,7 +122,7 @@ const HomePage = () => {
       {/* 4th section ( Gallery )*/}
       <section className=" flex item-start h-[500px] ">
         {/* this is where gallery will go */}
-        <Carousel data={slides} />
+        <ModalWrapper data={slides} />
       </section>
 
       {/* 5th Section ( Professional Experience ) */}

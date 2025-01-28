@@ -17,15 +17,16 @@ return (
     <div>
         {/* Trigger button or image to open the modal */}
         <button 
-        
         onClick={toggleModal} 
-        className="p-4 bg-blue-500 text-white rounder">
+        className="p-4 text-white rounder">
             
             <img
             src={pcImage}
             alt="90s computer"
             className=" border-2 border-black "
         />
+        <p className=" flex bg-slate-700"> STORY SPHERE </p>
+        <p className=" flex bg-slate-700"> React JS node.js  </p>
         </button>
 
         {/* Modal */}

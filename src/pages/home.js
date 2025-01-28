@@ -120,18 +120,19 @@ const HomePage = () => {
       </section>
 
       {/* 4th section ( Gallery )*/}
-      <div className="flex">
-      <section className=" flex item-start h-[500px] ">
+      <div className="flex flex-col md:flex-row gap-4 ">
+
+      <section className=" flex  h-[400px] ">
         {/* this is where gallery will go */}
         <ModalWrapper data={slides} />
-      </section>
+        </section>
      
-      <section className=" flex item-start h-[400px] ">
+      <section className=" flex h-[400px] ">
         {/* this is where gallery will go */}
         <ModalWrapper data={slides} />
       </section>
 
-      <section className=" flex item-start h-[400px] ">
+      <section className=" flex h-[400px] ">
         {/* this is where gallery will go */}
         <ModalWrapper data={slides} />
       </section>

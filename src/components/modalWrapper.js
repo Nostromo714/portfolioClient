@@ -19,7 +19,6 @@ return (
         <button 
         onClick={toggleModal} 
         className="p-4 text-white rounder">
-            
             <img
             src={pcImage}
             alt="90s computer"

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Carousel } from "./carousel";
 import { BsXCircle } from "react-icons/bs";
+import pcImage from '../assets/90s_computer.jpg';
+
 
 export const ModalWrapper = ({ data }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,8 +16,16 @@ export const ModalWrapper = ({ data }) => {
 return (
     <div>
         {/* Trigger button or image to open the modal */}
-        <button onClick={toggleModal} className="p-4 bg-blue-500 text-white rounder">
-            Open Carousel Modal
+        <button 
+        
+        onClick={toggleModal} 
+        className="p-4 bg-blue-500 text-white rounder">
+            
+            <img
+            src={pcImage}
+            alt="90s computer"
+            className=" border-2 border-black "
+        />
         </button>
 
         {/* Modal */}

@@ -1,3 +1,6 @@
+/* Importing Tailwind’s utility classes */
+@tailwind utilities;
+
 .flip-card {
     perspective: 1000px; /* adds depth to the 3D effect */
 }
@@ -38,3 +41,9 @@
     object-fit: cover; /* Make the image cover the entire div */
   }
   
+/* styles.css or Tailwind config */
+@layer utilities {
+    .text-shadow {
+      text-shadow: 8px 8px 8px rgba(20, 27, 32, 0.7); /* soft shadow */
+    }
+  }

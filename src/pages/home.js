@@ -86,16 +86,15 @@ const HomePage = () => {
       {/* 3rd section ( My Work ) */}
       <section className="h-screen flex flex-col sm:flex-row px-10">
          {/* Left Content (My Work description) */}
-        <div className="flex-1 text-center md:text-left flex items-center mb-10 sm:mb-0">
+        <div className="flex-1 text-center md:text-left flex items-center p-12 mb-10 sm:mb-0">
         <div>
-            <h1 className=" text-8xl tracking-tight p-10"
-            >
+            <h1 className=" text-8xl tracking-tight p-10">
+            {/* Header */}
+            MY WORK
+            </h1>
 
-        {/* Header */}
-          MY WORK
-        </h1>
-        <div className=" tracking-tight border-2 border-black max-w-1/2 p-10">
-        <p className=" text-lg font-bold leading-relaxed ">
+        <div className=" bg-custom-gradient bg-opacity-60 tracking-tight border-2 border-black max-1/2 p-10 ">
+        <p className="text-lg text-shadow font-bold leading-relaxed p-4 ">
           Built and deployed scalable, responsive web apps with real-time
           features, focusing on high performance and intuitive interfaces using
           React.js, Node.js, and MongoDB. <br /> Passionate about creating

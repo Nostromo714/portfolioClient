@@ -2,6 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
+import './App.css'; // Import the global styles
 
 
 // Import your pages

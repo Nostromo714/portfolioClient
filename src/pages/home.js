@@ -5,9 +5,10 @@ import ContactForm from '../components/contactForm';
 import Testimonials from "../components/testimonials"
 import pcImage from '../assets/90s_computer.jpg';
 import computerModern from '../assets/computerModern.jpg'
-import { Carousel } from "../components/carousel";
+//import { Carousel } from "../components/carousel";
 import { slides } from "../assets/carouselData"
 import { ModalWrapper } from "../components/modalWrapper";
+import FlipCard from "../components/flipCard";
 const HomePage = () => {
   return (
 
@@ -109,13 +110,10 @@ const HomePage = () => {
         </div>
         {/*  */}
      
-      {/* Right content (Image) */}
+      {/* Right content (Image Flip Card) */}
       <div className="flex items-center p-10 ">
-        <img
-            src={computerModern}
-            alt="90s computer"
-            className=" border-2 border-black "
-        />
+        <FlipCard
+            frontImage={computerModern} backImage={pcImage} />
       </div>
       </section>
 

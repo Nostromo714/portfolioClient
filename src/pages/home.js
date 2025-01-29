@@ -84,21 +84,18 @@ const HomePage = () => {
         </section>
 
       {/* 3rd section ( My Work ) */}
-      <section className="h-screen flex flex-col sm:flex-row space-x-10 px-10">
-        <div className="max-w-lg text-center md:text-left">
+      <section className="h-screen flex flex-col sm:flex-row px-10">
+         {/* Left Content (My Work description) */}
+        <div className="flex-1 text-center md:text-left flex items-center mb-10 sm:mb-0">
+        <div>
             <h1 className=" text-8xl tracking-tight p-10"
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+            >
+
         {/* Header */}
           MY WORK
         </h1>
-        <div className=" tracking-tight border-2 border-black max-w-full p-10">
-        <p>
+        <div className=" tracking-tight border-2 border-black max-w-1/2 p-10">
+        <p className=" text-lg font-bold leading-relaxed ">
           Built and deployed scalable, responsive web apps with real-time
           features, focusing on high performance and intuitive interfaces using
           React.js, Node.js, and MongoDB. <br /> Passionate about creating
@@ -108,33 +105,39 @@ const HomePage = () => {
         </p>
         </div>
         </div>
-        {/*  */}
+        </div>
+     
      
       {/* Right content (Image Flip Card) */}
-      <div className="flex items-center p-10 ">
+      <div className=" sm:1/2 flex items-center justify-center p-10">
+      
         <FlipCard
-            frontImage={computerModern} backImage={pcImage} />
+            frontImage={computerModern} 
+            backImage={pcImage}
+            className="w-[600px] h-[700px]" //set teh size of the flipCard  
+            />
+      
       </div>
       </section>
 
       {/* 4th section ( Gallery )*/}
-      <div className="flex flex-col md:flex-row gap-4 ">
+      <section className=" flex flex-col md:flex-row gap-4 ">
 
-      <section className=" flex  h-[400px] ">
+        <div className=" flex h-[400px] ">
         {/* this is where gallery will go */}
         <ModalWrapper data={slides} />
-        </section>
+        </div>
      
-      <section className=" flex h-[400px] ">
+        <div className=" flex h-[400px] ">
         {/* this is where gallery will go */}
         <ModalWrapper data={slides} />
-      </section>
+        </div>
 
-      <section className=" flex h-[400px] ">
+        <div className=" flex h-[400px] ">
         {/* this is where gallery will go */}
         <ModalWrapper data={slides} />
+        </div>
       </section>
-      </div>
 
       {/* 5th Section ( Professional Experience ) */}
       {/* Header */}

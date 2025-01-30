@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
 
 export const Carousel = ({ data, activeIndex, onSlideChange }) => {
-    // State to track the current image index
-    const [currentIndex, setCurrentIndex] = useState(0);
 
     // Handler for the left arrow click
     const handleLeftArrowClick = () => {
@@ -30,8 +28,8 @@ export const Carousel = ({ data, activeIndex, onSlideChange }) => {
          {/* Image */}
          <div className="w-full h-[400px]"> {/* Set a fixed height */}
         <img 
-        src={data[currentIndex].src} 
-        alt={data[currentIndex].alt} 
+        src={data[activeIndex].src} 
+        alt={data[activeIndex].alt} 
         className="w-full object-cover m-2 rounded"/> 
         </div>
          {/* Right Arrow */}
@@ -45,8 +43,8 @@ export const Carousel = ({ data, activeIndex, onSlideChange }) => {
             return (
         <button 
         key={idx}
-        onClick={() => setCurrentIndex(idx)}
-        className={`w-3 h-3 rounded-full bg-gray-600 ${currentIndex === idx ? '' : 'bg-slate-400  shadow-lg'} transition-all`}/>
+        onClick={() => onSlideChange(idx)}
+        className={`w-3 h-3 rounded-full bg-gray-600 ${activeIndex === idx ? '' : 'bg-slate-400  shadow-lg'} transition-all`}/>
             )
         })}
     </span>

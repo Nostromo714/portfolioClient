@@ -127,7 +127,7 @@ const HomePage = () => {
         <div className=" flex h-[400px] ">
         <ModalWrapper 
         data={storySphere}
-        title="MongoDB, Express.js, React, Node.js " />
+        title="MongoDB, Express.js, React, Node.js" />
         </div>
 
         {/* project 2 */}

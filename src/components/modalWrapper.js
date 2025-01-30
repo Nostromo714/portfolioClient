@@ -12,10 +12,10 @@ export const ModalWrapper = ({ data , title}) => {
     const toggleModal = () => {
         setIsModalOpen(!isModalOpen);
     };
-    // Function to handle carousel index change
+
     const handleCarouselChange = (index) => {
-        setActiveIndex(index); // Update active slide index
-    };
+        setActiveIndex(index); // update the active index
+    }    
 
 return (
     <div className=" flex sm:flex-col">
@@ -29,7 +29,7 @@ return (
             alt="90s computer"
             className=" border-2 border-black "
             />
-            <p className=" flex bg-slate-700">{title}</p> {/* Dynamically show the title */}
+            <p className=" flex bg-slate-700 p-3">{title}</p> {/* Dynamically show the title */}
         
         </button>
 

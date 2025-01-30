@@ -6,13 +6,13 @@ export const storySphere = [
   },
   {
     src: "https://picsum.photos/600/400?grayscale",
-    alt: "Image 2 for carousel",
+    alt: "Image 1 for carousel",
     description: "This is the second.",
     
   },
   {
     src: "https://picsum.photos/600/400?grayscale",
-    alt: "Image 2 for carousel",
+    alt: "Image 1 for carousel",
     description: "This is the third.",
   }
 ];
@@ -44,12 +44,12 @@ export const projectThreeSlides = [
   {
     src: "https://picsum.photos/600/400/?random&grayscale", // Project 3 Image 2
     alt: "Image 2 for project 3",
-    description: "This is an image of the second feature in Project 2.",
+    description: "This is an image of the 2nd feature in Project 3.",
   },
   {
     src: "https://picsum.photos/600/400/?random&blur", // Project 3 Image 3
     alt: "Image 3 for project 3",
-    description: "Here we show another angle or part of the Project 2.",
+    description: "Here we show another angle or part of the Project 3.",
   }
 ];
   

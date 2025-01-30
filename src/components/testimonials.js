@@ -5,7 +5,7 @@ const Testimonials = () => {
 
     return (
         
-        <div className=" flex-col sm:flex-row ">
+        <div className=" flex-col sm:flex-row pt-20">
 
             {/* testimonial 1 */}
             <div className="flex flex-col sm:flex-row border-2 border-yellow-400">

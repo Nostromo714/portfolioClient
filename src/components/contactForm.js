@@ -45,7 +45,7 @@ const ContactForm = () => {
      };
 
      return (
-        <div className=" contact-form w-full h-screen flex flex-col justify-center">
+        <div className=" contact-form w-full h-screen flex flex-col justify-center pt-20">
             <div className='p-9'>
           <h1
             className="text-7xl p-8 tracking-tight border-b-2 border-gray-500 "

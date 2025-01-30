@@ -4,7 +4,7 @@ import { BsXCircle } from "react-icons/bs";
 import pcImage from '../assets/90s_computer.jpg';
 
 
-export const ModalWrapper = ({ data }) => {
+export const ModalWrapper = ({ data , title}) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     // Function to open and close modal
@@ -14,18 +14,19 @@ export const ModalWrapper = ({ data }) => {
 };
 
 return (
-    <div>
+    <div className=" flex sm:flex-col">
         {/* Trigger button or image to open the modal */}
         <button 
         onClick={toggleModal} 
         className="p-4 text-white rounder">
+
             <img
             src={pcImage}
             alt="90s computer"
             className=" border-2 border-black "
-        />
-        <p className=" flex bg-slate-700"> STORY SPHERE </p>
-        <p className=" flex bg-slate-700"> React JS node.js  </p>
+            />
+            <p className=" flex bg-slate-700">{title}</p> {/* Dynamically show the title */}
+        
         </button>
 
         {/* Modal */}
@@ -46,6 +47,14 @@ return (
 
                         {/* Carousel Component inside the modal */}
                         <Carousel data={data} />
+
+                        {/* Description Below Carousel */}
+                        <div className="text-white mt-6 px-4 py-2 bg-black bg-opacity-50 rounded-lg">
+                            <p className="text-lg">
+                                {/* Assuming the description for each slide is available in the data */}
+                                {data[0].description} {/* You can change this dynamically if needed */}
+                            </p>
+                        </div>
                     </div>
                 </div>
             )}

@@ -5,7 +5,6 @@ import ContactForm from '../components/contactForm';
 import Testimonials from "../components/testimonials"
 import pcImage from '../assets/90s_computer.jpg';
 import computerModern from '../assets/computerModern.jpg'
-//import { Carousel } from "../components/carousel";
 import { slides } from "../assets/carouselData"
 import { ModalWrapper } from "../components/modalWrapper";
 import FlipCard from "../components/flipCard";
@@ -119,28 +118,25 @@ const HomePage = () => {
       </div>
       </section>
 
-      {/* 4th section ( Gallery )*/}
+      {/* 4th section ( Projects Gallery Modal/Carousel )*/}
       <section className=" flex flex-col md:flex-row gap-4 ">
-
+        {/* project Story Sphere */}
         <div className=" flex h-[400px] ">
-        {/* this is where gallery will go */}
         <ModalWrapper data={slides} />
         </div>
-     
+          {/* project porfolio  */}
         <div className=" flex h-[400px] ">
-        {/* this is where gallery will go */}
         <ModalWrapper data={slides} />
         </div>
 
         <div className=" flex h-[400px] ">
-        {/* this is where gallery will go */}
         <ModalWrapper data={slides} />
         </div>
       </section>
 
       {/* 5th Section ( Professional Experience ) */}
 
-      <section className="p-40 ">
+      <section>
       <ProfessionalExperience />     
       </section>
         
@@ -161,7 +157,4 @@ const HomePage = () => {
   );
 };
 
-// Ensure default export
 export default HomePage;
-
-//git checkout -- file_path

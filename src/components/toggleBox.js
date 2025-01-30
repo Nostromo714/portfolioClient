@@ -7,7 +7,7 @@ const ToggleBox = ({ title, description, className }) => {
     
 
 return (
-    <div className={`p-6 bg-opacity-50 mb-6 border-2 border-black text-white shadow-md  ${className}`}>
+    <div className={` border-2 border-blue-400 rounded-lg p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-purple-700 shadow-lg mb-1 text-white shadow-md  ${className}`}>
         <div
         onClick={() => setIsOpen(!isOpen)}
         className="cursor-pointer"
@@ -17,17 +17,16 @@ return (
             alignItems: 'center',
         }} 
         >
-            <h2 className="text-xl font-semibold">{title}</h2>
+            <h2 className="text-xl font-semibold ">{title}</h2>
             <span>{isOpen ? '_' : '+'}</span>
         </div>
 
         {isOpen && (
-            <div className="mt-6 ">
-                 <div className={`mt-6 p-4 ${isOpen ? 'bg-orange-500' : 'bg-white'}`}> 
-                 {/* Change background color when open */}
-                <p>{description}</p>
+            <div className="mt-4 rounded-lg bg-black ">
+                    <div className="p-4 ">
+                        <p className="rounded-lg p-3 ">{description}</p>
+                    </div>
                 </div>
-             </div>
         )}
     </div>
 )

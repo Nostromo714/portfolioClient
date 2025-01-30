@@ -136,7 +136,7 @@ const HomePage = () => {
 
       {/* 5th Section ( Professional Experience ) */}
 
-      <section>
+      <section className="mt-20">
       <ProfessionalExperience />     
       </section>
         

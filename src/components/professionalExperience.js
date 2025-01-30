@@ -32,8 +32,8 @@ const jobExperiences = [
       </h1>
 
        {/* Using ToggleBox for job experiences */}
-       <div className="flex justify-center mt-8">
-        <div className="border-black border-2 p-6 w-full max-w-4xl mx-auto">
+       <div className="flex justify-center mt-8 ">
+        <div className="rounded-lg w-full max-w-4xl mx-auto">
           {jobExperiences.map((job, index) => (
             <ToggleBox
               key={index}

@@ -23,6 +23,8 @@ export const Carousel = ({ data }) => {
         <BsArrowLeftCircle 
         onClick={handleLeftArrowClick}
         className=" absolute left-6 top-1/2 transform text-gray-400 text-4xl cursor-pointer rounded-full z-10 hover-pointer hover:opacity-50 shadow-lg" />
+
+         {/* Image */}
         <img 
         src={data[currentIndex].src} 
         alt={data[currentIndex].alt} 

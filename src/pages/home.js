@@ -5,7 +5,9 @@ import ContactForm from '../components/contactForm';
 import Testimonials from "../components/testimonials"
 import pcImage from '../assets/90s_computer.jpg';
 import computerModern from '../assets/computerModern.jpg'
-import { slides } from "../assets/carouselData"
+import { storySphere } from "../assets/carouselData"
+import { projectTwoSlides } from "../assets/carouselData"
+import { projectThreeSlides } from "../assets/carouselData"
 import { ModalWrapper } from "../components/modalWrapper";
 import FlipCard from "../components/flipCard";
 const HomePage = () => {
@@ -120,24 +122,33 @@ const HomePage = () => {
 
       {/* 4th section ( Projects Gallery Modal/Carousel )*/}
       <section className=" flex flex-col md:flex-row gap-4 ">
+
         {/* project Story Sphere */}
         <div className=" flex h-[400px] ">
-        <ModalWrapper data={slides} />
-        </div>
-          {/* project porfolio  */}
-        <div className=" flex h-[400px] ">
-        <ModalWrapper data={slides} />
+        <ModalWrapper 
+        data={storySphere}
+        title="Story Sphere Project" />
         </div>
 
+        {/* project 2 */}
         <div className=" flex h-[400px] ">
-        <ModalWrapper data={slides} />
+        <ModalWrapper 
+        data={projectTwoSlides} 
+        title="project 2" />
+        </div>
+
+        {/* project 3 */}
+        <div className="flex h-[400px]" >
+        <ModalWrapper 
+        data={projectThreeSlides} 
+        title="Project 3" />
         </div>
       </section>
 
       {/* 5th Section ( Professional Experience ) */}
 
       <section className="mt-20">
-      <ProfessionalExperience />     
+      <ProfessionalExperience title="Story Sphere Project" />     
       </section>
         
       {/* 6th Section (Contact Me) */}

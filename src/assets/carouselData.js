@@ -2,7 +2,7 @@ export const storySphere = [
   {
     src: "https://picsum.photos/600/400/?blur",
     alt: "Image 1 for carousel",
-    description: "project 1 This is the first image description, explaining what the image is about.",
+    description: " full-stack blog platform built with the MERN stack, allowing users to read blogs, leave comments, and interact with content in real time.",
   },
   {
     src: "https://picsum.photos/600/400?grayscale",

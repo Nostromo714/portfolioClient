@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Carousel } from "./carousel";
 //import { BsXCircle } from "react-icons/bs";
-import pcImage from '../assets/90s_computer.jpg';
+import computerModern from '../assets/computerModern.jpg';
 
 
 export const ModalWrapper = ({ data , title}) => {
@@ -25,7 +25,7 @@ return (
         className="p-4 text-white rounder ">
 
             <img
-            src={pcImage}
+            src={computerModern}
             alt="90s computer"
             className=" border-2 border-black "
             />

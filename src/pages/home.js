@@ -13,14 +13,14 @@ import FlipCard from "../components/flipCard";
 const HomePage = () => {
   return (
 
-    <div className="text-white min-h-screen flex flex-col bg-gradient-to-b from-slate-800 via-orange-100 to-black relative bg-cover">
+    <div className="text-white min-h-screen flex flex-col bg-gradient-to-b from-slate-800 via-slate-200 to-black relative bg-cover">
 
       {/* 1st section ( My Name )*/}
       <section className="h-screen flex-center text-center p-20 ">
         <div className="p-20">
           <h2> &lt; LUCY ELIZABETH /&gt; </h2>
         </div>
-        <div className="">
+        <div>
           <h1
             className="text-8xl tracking-tight max-w-full p-10"
             style={{
@@ -95,8 +95,8 @@ const HomePage = () => {
             MY WORK
             </h1>
 
-        <div className=" bg-custom-gradient bg-opacity-60 tracking-tight border-2 border-black max-1/2 p-10 ">
-        <p className="text-lg font-bold leading-relaxed p-4 ">
+        <div className="  max-1/2 p-10">
+        <p className="text-2xl text-black font-bold  leading-relaxed p-4">
           Built and deployed scalable, responsive web apps with real-time
           features, focusing on high performance and intuitive interfaces using
           React.js, Node.js, and MongoDB. <br /> Passionate about creating
@@ -127,7 +127,7 @@ const HomePage = () => {
         <div className=" flex h-[400px] ">
         <ModalWrapper 
         data={storySphere}
-        title="Story Sphere Project" />
+        title="MongoDB, Express.js, React, Node.js " />
         </div>
 
         {/* project 2 */}

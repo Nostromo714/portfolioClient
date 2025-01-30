@@ -1,6 +1,6 @@
 // /src/pages/home.js
 import React from "react";
-import ToggleBox from "../components/toggleBox";
+import ProfessionalExperience from "../components/professionalExperience";
 import ContactForm from '../components/contactForm';
 import Testimonials from "../components/testimonials"
 import pcImage from '../assets/90s_computer.jpg';
@@ -139,50 +139,20 @@ const HomePage = () => {
       </section>
 
       {/* 5th Section ( Professional Experience ) */}
-      {/* Header */}
+
       <section className="p-40 ">
-      <h1
-        className="text-8xl flex justify-center tracking-tight max-w-full p-10 "
-        style={{
-          fontFamily: "Poppins, sans-serif",
-          fontSize: "4rem",
-          textShadow:
-            "3px 3px 5px rgba(14, 14, 22, 0.91), 0 0 25px rgba(17, 9, 21, 0.98), 0 0 50px rgba(31, 28, 66, 0.61)",
-        }}
-      >
-        Professional Experience
-      </h1>
-      
-      {/* Using ToggleBox for job experiences */}
-      <div className="flex justify-center ">
-      <div className="border-black border-2 p-6 w-full max-w-4xl mx-auto">
-        <ToggleBox
-          title="Jr Fullstack Developer Student At Upright Education"
-          description="Experienced in developing both front and backend technologies. JavaScript, Python, React, Node.js."
-        />
-
-        <ToggleBox
-          title="Assistant F&B Manager At HMSHOST"
-          description="Managed a team of food and beverage staff, ensuring smooth operations and high customer satisfaction."
-        />
-
-        <ToggleBox
-          title="Manager for Starbucks at HMSHOST"
-          description="Led a team of baristas, maintaining high standards of service and customer interaction while managing day-to-day operations."
-        />
-      </div>
-      </div>
+      <ProfessionalExperience />     
       </section>
         
       {/* 6th Section (Contact Me) */}
 
       <section className="flex flex-col sm:flex-row justify-between gap-10 p-5">
         <div className="w-full sm:w-1/2 p-9"> 
-        <ContactForm></ContactForm>
+        <ContactForm />  
         </div>
 
         <div className=" w-full sm:w-1/2 p-9">
-        <Testimonials></Testimonials>
+        <Testimonials /> 
         </div>
       </section>
 

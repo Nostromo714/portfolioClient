@@ -5,20 +5,22 @@ import ContactForm from '../components/contactForm';
 import Testimonials from "../components/testimonials"
 import pcImage from '../assets/90s_computer.jpg';
 import computerModern from '../assets/computerModern.jpg'
-import { slides } from "../assets/carouselData"
+import { storySphere } from "../assets/carouselData"
+import { projectTwoSlides } from "../assets/carouselData"
+import { projectThreeSlides } from "../assets/carouselData"
 import { ModalWrapper } from "../components/modalWrapper";
 import FlipCard from "../components/flipCard";
 const HomePage = () => {
   return (
 
-    <div className="text-white min-h-screen flex flex-col bg-gradient-to-b from-slate-800 via-orange-100 to-black relative bg-cover">
+    <div className="text-white min-h-screen flex flex-col bg-gradient-to-b from-slate-800 via-slate-200 to-black relative bg-cover">
 
       {/* 1st section ( My Name )*/}
       <section className="h-screen flex-center text-center p-20 ">
         <div className="p-20">
           <h2> &lt; LUCY ELIZABETH /&gt; </h2>
         </div>
-        <div className="">
+        <div>
           <h1
             className="text-8xl tracking-tight max-w-full p-10"
             style={{
@@ -83,7 +85,8 @@ const HomePage = () => {
         </section>
 
       {/* 3rd section ( My Work ) */}
-      <section className="h-screen flex flex-col sm:flex-row px-10">
+      <section className="flex flex-col sm:flex-row justify-between gap-10 pb-20">
+
          {/* Left Content (My Work description) */}
         <div className="flex-1 text-center md:text-left flex items-center p-12 mb-10 sm:mb-0">
         <div>
@@ -92,8 +95,8 @@ const HomePage = () => {
             MY WORK
             </h1>
 
-        <div className=" bg-custom-gradient bg-opacity-60 tracking-tight border-2 border-black max-1/2 p-10 ">
-        <p className="text-lg text-shadow font-bold leading-relaxed p-4 ">
+        <div className="  max-1/2 p-10">
+        <p className="text-2xl text-black font-bold  leading-relaxed p-4">
           Built and deployed scalable, responsive web apps with real-time
           features, focusing on high performance and intuitive interfaces using
           React.js, Node.js, and MongoDB. <br /> Passionate about creating
@@ -105,9 +108,8 @@ const HomePage = () => {
         </div>
         </div>
      
-     
-      {/* Right content (Image Flip Card) */}
-      <div className=" sm:1/2 flex items-center justify-center p-10">
+     {/* Right content (Image Flip Card) */}
+      <div className=" flex sm:w-1/2 justify-center items-center p-9">
       
         <FlipCard
             frontImage={computerModern} 
@@ -116,28 +118,37 @@ const HomePage = () => {
             />
       
       </div>
-      </section>
+      </section> 
 
       {/* 4th section ( Projects Gallery Modal/Carousel )*/}
-      <section className=" flex flex-col md:flex-row gap-4 ">
+      <section className=" flex flex-col md:flex-row gap-4 pt-20 ">
+
         {/* project Story Sphere */}
         <div className=" flex h-[400px] ">
-        <ModalWrapper data={slides} />
-        </div>
-          {/* project porfolio  */}
-        <div className=" flex h-[400px] ">
-        <ModalWrapper data={slides} />
+        <ModalWrapper 
+        data={storySphere}
+        title="MongoDB, Express.js, React, Node.js" />
         </div>
 
+        {/* project 2 */}
         <div className=" flex h-[400px] ">
-        <ModalWrapper data={slides} />
+        <ModalWrapper 
+        data={projectTwoSlides} 
+        title="project 2" />
+        </div>
+
+        {/* project 3 */}
+        <div className="flex h-[400px]" >
+        <ModalWrapper 
+        data={projectThreeSlides} 
+        title="Project 3" />
         </div>
       </section>
 
       {/* 5th Section ( Professional Experience ) */}
 
-      <section className="mt-20">
-      <ProfessionalExperience />     
+      <section className="mt-20 pt-20">
+      <ProfessionalExperience title="Story Sphere Project" />     
       </section>
         
       {/* 6th Section (Contact Me) */}
@@ -147,7 +158,7 @@ const HomePage = () => {
         <ContactForm />  
         </div>
 
-        <div className=" w-full sm:w-1/2 p-9">
+        <div className=" w-full sm:w-1/2 p-9 pt-20">
         <Testimonials /> 
         </div>
       </section>

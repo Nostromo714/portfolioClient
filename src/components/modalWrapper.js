@@ -1,51 +1,56 @@
 import React, { useState } from "react";
 import { Carousel } from "./carousel";
-import { BsXCircle } from "react-icons/bs";
-import pcImage from '../assets/90s_computer.jpg';
+//import { BsXCircle } from "react-icons/bs";
+import computerModern from '../assets/computerModern.jpg';
 
 
-export const ModalWrapper = ({ data }) => {
+export const ModalWrapper = ({ data , title}) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [activeIndex, setActiveIndex] = useState(0); //tracks active slid index for description
 
     // Function to open and close modal
     const toggleModal = () => {
         setIsModalOpen(!isModalOpen);
-    
-};
+    };
+
+    const handleCarouselChange = (index) => {
+        setActiveIndex(index); // update the active index
+    }    
 
 return (
-    <div>
+    <div className=" flex sm:flex-col">
         {/* Trigger button or image to open the modal */}
         <button 
         onClick={toggleModal} 
-        className="p-4 text-white rounder">
+        className="p-4 text-white border-2">
+
             <img
-            src={pcImage}
-            alt="90s computer"
-            className=" border-2 border-black "
-        />
-        <p className=" flex bg-slate-700"> STORY SPHERE </p>
-        <p className=" flex bg-slate-700"> React JS node.js  </p>
+            src={data[0].src} // Use the first image from the data
+            alt="Story Sphere Home Page"
+            className=" border-2 border-black w-[400px] h-auto object-cover "
+            />
+            <p className=" flex bg-slate-700 p-3">{title}</p> {/* Dynamically show the title */}
+        
         </button>
 
         {/* Modal */}
         {isModalOpen && (
                 <div
-                    className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center"
+                    className="fixed border-2 inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center"
                     onClick={toggleModal}  // Close modal on outside click
                 >
                     <div
-                        className="relative bg-black p-5 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] h-[80%] rounded-lg flex flex-col justify-center items-center"
+                        className="relative bg-b-black  w-full sm:w-[80%] md:w-[70%] lg:w-[60%] h-[80%] rounded-lg flex flex-col justify-center items-center"
                         onClick={(e) => e.stopPropagation()}  // Prevent modal close on inner content click
                     >
-                        {/* Close Button */}
-                        <BsXCircle
-                            onClick={toggleModal}
-                            className="absolute top-4 right-4 text-white text-4xl cursor-pointer hover:opacity-75"
-                        />
 
                         {/* Carousel Component inside the modal */}
-                        <Carousel data={data} />
+                        <Carousel 
+                        data={data}
+                        activeIndex={activeIndex} // Pass active index to Carousel
+                        onSlideChange={handleCarouselChange} // Pass the function to handle index changes
+                        />
+
                     </div>
                 </div>
             )}

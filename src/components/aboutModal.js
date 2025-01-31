@@ -1,7 +1,7 @@
 import React from 'react';
 import computerModern from '../assets/images/flipCard/computerModern.jpg'
 
-const catalogImages = [
+const collageLogImages = [
     { src: computerModern, alt: 'Image 1' },
     { src: computerModern, alt: 'Image 2' },
     { src: computerModern, alt: 'Image 3' },
@@ -26,7 +26,7 @@ const AboutModal = ({ onClose }) => {
         <p className="text-lg mb-6 text-center">{aboutMeDescription}</p>
 
         <div className="flex flex-wrap justify-center">
-          {catalogImages.map((image, index) => (
+          {collageLogImages.map((image, index) => (
             <div key={index} className="p-4">
               <img
                 src={image.src}

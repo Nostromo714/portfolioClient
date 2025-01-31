@@ -20,23 +20,38 @@ import AboutModal from "../components/aboutModal";
 const HomePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // State to control the modal visibility
 
-
+// Handle modal visibility
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);  // Toggle the modal open/close
   };
 
   return (
     <div className="text-white min-h-screen flex flex-col bg-gradient-to-b from-slate-800 via-slate-200 to-black relative bg-cover">
-
-    {/* 1s section ( Top of Page and HoverModal About Me )*/}
-   {/* About Me Section: Name that triggers the modal */}
-   <section className="flex justify-center items-center pt-40">
-        <button
-          onClick={toggleModal}
-          className="text-3xl font-bold text-white hover:text-yellow-400 cursor-pointer"
-        >
-          Lucy Elizabeth {/* This is the name displayed initially */}
-        </button>
+ {/* 1st section ( My Name )*/}
+ <section className="h-screen flex-center text-center p-20 ">
+        <div className="p-20">
+          <h2> &lt; LUCY ELIZABETH /&gt; </h2>
+        </div>
+        <div>
+          <h1
+            className="text-8xl tracking-tight max-w-full p-10"
+            style={{
+              fontFamily: "Poppins, sans-serif",
+              fontSize: "8rem",
+              textShadow:
+                "3px 3px 5px rgba(14, 14, 22, 0.91), 0 0 25px rgba(17, 9, 21, 0.98), 0 0 50px rgba(31, 28, 66, 0.61)",
+            }}
+          >
+            LUCY ELIZABETH
+          </h1>
+          {/* Spacing between h1 and p */}
+          <p className="mt-4 p-8 text-lg text-white">
+            FULL-STACK DEVELOPER, UI-ENGINEER, & DESIGNER
+          </p>
+        </div>
+        <div className="mt-auto mb-10">
+          <i className="fa-solid fa-code text-6xl"></i>
+        </div>
       </section>
 
       {/* About Modal: Render the modal if it's open */}

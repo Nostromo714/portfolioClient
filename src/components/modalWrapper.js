@@ -22,12 +22,12 @@ return (
         {/* Trigger button or image to open the modal */}
         <button 
         onClick={toggleModal} 
-        className="p-4 text-white rounder ">
+        className="p-4 text-white border-2">
 
             <img
-            src={computerModern}
-            alt="90s computer"
-            className=" border-2 border-black "
+            src={data[0].src} // Use the first image from the data
+            alt="Story Sphere Home Page"
+            className=" border-2 border-black w-[400px] h-auto object-cover "
             />
             <p className=" flex bg-slate-700 p-3">{title}</p> {/* Dynamically show the title */}
         

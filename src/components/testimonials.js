@@ -1,5 +1,5 @@
 import React from "react";
-import computerModern from '../assets/computerModern.jpg'
+import computerModern from '../assets/images/flipCard/computerModern.jpg'
 
 const Testimonials = () => {
 

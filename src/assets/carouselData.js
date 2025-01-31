@@ -1,19 +1,43 @@
+// imports for StorySphereImg 
+import storySphereImg1 from '../assets/images/storySphereImg/storySphereImg1.jpg'
+import blogBackEndJpg from '../assets/images/storySphereImg/blogPageCode.jpg'
+import blogPageJpg from '../assets/images/storySphereImg/blogPage.jpg'
+import blogPageCode from '../assets/images/storySphereImg/blogPageCode.jpg'
+import commentJpg from '../assets/images/storySphereImg/commentPage.jpg'
+import commentCode from '../assets/images/storySphereImg/commentCode.jpg'
+
+// Story Sphere data for carousel
 export const storySphere = [
   {
-    src: "https://picsum.photos/600/400/?blur",
+    src: storySphereImg1,
     alt: "Image 1 for carousel",
-    description: " full-stack blog platform built with the MERN stack, allowing users to read blogs, leave comments, and interact with content in real time.",
+    description: "StorySphere is a  ",
   },
   {
-    src: "https://picsum.photos/600/400?grayscale",
+    src: blogBackEndJpg,
     alt: "Image 1 for carousel",
-    description: "This is the second.",
+    description: "full-stack blog platform built with the MERN stack, allowing users to read blogs, leave comments, and interact with content in real time.",
     
   },
   {
-    src: "https://picsum.photos/600/400?grayscale",
+    src: blogPageJpg,
     alt: "Image 1 for carousel",
-    description: "This is the third.",
+    description: "Blog page user side.",
+  },
+  {
+    src: blogPageCode,
+    alt: "Image 1 for carousel",
+    description: "blog page.",
+  },
+  {
+    src: commentJpg,
+    alt: "Image 1 for carousel",
+    description: "Comments.",
+  },
+  {
+    src: commentCode,
+    alt: "Image 1 for carousel",
+    description: "Comment Code.",
   }
 ];
 

@@ -1,28 +1,44 @@
 // /src/pages/home.js
-import React from "react";
+import React, { useState } from "react";
+import Header from "../components/aboutMeButton";
 import ProfessionalExperience from "../components/professionalExperience";
 import ContactForm from '../components/contactForm';
 import Testimonials from "../components/testimonials"
-import pcImage from '../assets/90s_computer.jpg';
-import computerModern from '../assets/computerModern.jpg'
+
+
+// import img
+import pcImage from '../assets/images/flipCard/90s_computer.jpg';
+import computerModern from '../assets/images/flipCard/computerModern.jpg'
 import { storySphere } from "../assets/carouselData"
 import { projectTwoSlides } from "../assets/carouselData"
 import { projectThreeSlides } from "../assets/carouselData"
 import { ModalWrapper } from "../components/modalWrapper";
-import FlipCard from "../components/flipCard";
-const HomePage = () => {
-  return (
 
+
+//import HoverModal from "../components/aboutModal";
+import FlipCard from "../components/flipCard";
+
+const HomePage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false); // State to control the modal visibility
+
+// Handle modal visibility
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);  // Toggle the modal open/close
+  };
+
+  return (
     <div className="text-white min-h-screen flex flex-col bg-gradient-to-b from-slate-800 via-slate-200 to-black relative bg-cover">
 
-      {/* 1st section ( My Name )*/}
-      <section className="h-screen flex-center text-center p-20 ">
-        <div className="p-20">
-          <h2> &lt; LUCY ELIZABETH /&gt; </h2>
-        </div>
+      <section className=" p-6 flex ">
+      <Header />
+      </section>
+
+ {/* 1st section ( My Name )*/}
+ <section className="h-screen flex-center text-center p-10 ">
+        
         <div>
           <h1
-            className="text-8xl tracking-tight max-w-full p-10"
+            className="text-8xl tracking-tight max-w-full"
             style={{
               fontFamily: "Poppins, sans-serif",
               fontSize: "8rem",
@@ -33,12 +49,12 @@ const HomePage = () => {
             LUCY ELIZABETH
           </h1>
           {/* Spacing between h1 and p */}
-          <p className="mt-4 p-8 text-lg text-white">
+          <p className="mt-4 pt-10 text-lg text-white">
             FULL-STACK DEVELOPER, UI-ENGINEER, & DESIGNER
           </p>
         </div>
         <div className="mt-auto mb-10">
-          <i className="fa-solid fa-code text-6xl"></i>
+          <i className="fa-solid fa-code text-6xl pt-20"></i>
         </div>
       </section>
 
@@ -108,7 +124,7 @@ const HomePage = () => {
         </div>
         </div>
      
-     {/* Right content (Image Flip Card) */}
+     {/* Right content in My work (Image Flip Card) */}
       <div className=" flex sm:w-1/2 justify-center items-center p-9">
       
         <FlipCard

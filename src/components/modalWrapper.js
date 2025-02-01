@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Carousel } from "./carousel";
-//import { BsXCircle } from "react-icons/bs";
-import computerModern from '../assets/computerModern.jpg';
-
+//import { BsXCircle } from "react-icons/bs";  // Not in use but may use it later
 
 export const ModalWrapper = ({ data , title}) => {
     const [isModalOpen, setIsModalOpen] = useState(false);

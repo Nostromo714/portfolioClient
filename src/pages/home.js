@@ -1,9 +1,10 @@
 // /src/pages/home.js
-import React, { useState } from "react";
-import Header from "../components/aboutMeButton";
+import React, { useState, useRef } from "react";
+import HeaderAboutMe from "../components/aboutMeButton";
 import ProfessionalExperience from "../components/professionalExperience";
 import ContactForm from '../components/contactForm';
 import Testimonials from "../components/testimonials"
+import ScrollToSectionButton from '../components/scrollToSectionButton';
 
 
 // import img
@@ -25,16 +26,20 @@ const HomePage = () => {
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);  // Toggle the modal open/close
   };
+  
+  // Create a ref for the section you want to scroll to
+  const nextSectionRef = useRef(null);
 
   return (
     <div className="text-white min-h-screen flex flex-col bg-gradient-to-b from-slate-800 via-slate-200 to-black relative bg-cover">
 
+    {/* this is the ( aboutMeButton ) */}
       <section className=" p-6 flex ">
-      <Header />
+      <HeaderAboutMe />
       </section>
 
  {/* 1st section ( My Name )*/}
- <section className="h-screen flex-center text-center p-10 ">
+ <section className="flex-center text-center p-4 ">
         
         <div>
           <h1
@@ -49,20 +54,28 @@ const HomePage = () => {
             LUCY ELIZABETH
           </h1>
           {/* Spacing between h1 and p */}
-          <p className="mt-4 pt-10 text-lg text-white">
+          <p className="mt-4 pt-2 text-lg text-white">
             FULL-STACK DEVELOPER, UI-ENGINEER, & DESIGNER
           </p>
+
+          {/* ScrollToSectionButton Component */}
+      <section className=" flex justify-center items-center">
+      {/* Use the ScrollToSectionButton component */}
+      <ScrollToSectionButton targetRef={nextSectionRef} />
+    </section>
         </div>
-        <div className="mt-auto mb-10">
-          <i className="fa-solid fa-code text-6xl pt-20"></i>
-        </div>
+
+       
+      
+    
       </section>
 
-      {/* 2nd section ( My Boxes of expertise )*/}
-      <section className="h-screen flex flex-col justify-center items-center p-4">
-        {/* Header */}
+      {/* 2nd section ( My Expertise with Boxes of description )*/}
+      <section className="h-screen flex flex-col justify-center items-center p-4 pt-20">
+          {/* nextSection for  ScrollToSectionButton */}
         <h1
           className="text-8xl tracking-tight max-w-full p-10 text-center"
+          ref={nextSectionRef}
           style={{
             fontFamily: "Poppins, sans-serif",
             fontSize: "8rem",
@@ -72,6 +85,8 @@ const HomePage = () => {
         >
           MY EXPERTISE
         </h1>
+           {/* The next section to scroll to */}
+        
 
         <div className="flex flex-col sm:flex-row sm:flex-wrap mx-auto max-w-screen-lg mt-10">
           {/* Box 1 */}

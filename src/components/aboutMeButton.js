@@ -12,7 +12,9 @@ const toggleModal = () => {
 };
 
 return (
-<section className=" w-full h-[200px] flex justify-center items-center  ">
+<section className=" w-full h-[200px] flex justify-center items-center"
+>
+  {/* aboutMaeButton */}
   <button
     onClick={toggleModal}
     className="text-lg text-white font-bold relative group"

@@ -11,13 +11,14 @@ export const ModalWrapper = ({ data , title}) => {
         setIsModalOpen(!isModalOpen);
     };
 
+    // Function  to update the active index
     const handleCarouselChange = (index) => {
-        setActiveIndex(index); // update the active index
+        setActiveIndex(index); 
     }    
 
 return (
     <div className=" flex sm:flex-col">
-        {/* Trigger button or image to open the modal */}
+        {/* Trigger button image to open the modal */}
         <button 
         onClick={toggleModal} 
         className="p-4 text-white border-2">

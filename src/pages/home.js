@@ -23,9 +23,9 @@ const HomePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // State to control the modal visibility
 
 // Handle modal visibility
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);  // Toggle the modal open/close
-  };
+  //const toggleModal = () => {
+//setIsModalOpen(!isModalOpen);  // Toggle the modal open/close
+ // };
   
   // Create a ref for the section you want to scroll to
   const nextSectionRef = useRef(null);
@@ -33,7 +33,7 @@ const HomePage = () => {
   return (
     <div className="text-white min-h-screen flex flex-col bg-gradient-to-b from-slate-800 via-slate-200 to-black relative bg-cover">
 
-    {/* this is the ( aboutMeButton ) */}
+    {/* this is the ( aboutMeButton.js To Modal ) */}
       <section className=" p-6 flex ">
       <HeaderAboutMe />
       </section>

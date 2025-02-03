@@ -44,17 +44,17 @@ export const storySphere = [
 export const projectTwoSlides = [
   {
     src: "https://picsum.photos/600/400/?random", // Project 2 Image 1
-    alt: "Image 1 for project 2",
-    description: "Project 2 image 1, illustrating the overall design of the project."
+    alt: "Modal and Carousel",
+    description: "Modal With Carousel"
   },
   {
     src: "https://picsum.photos/600/400/?random&grayscale", // Project 2 Image 2
-    alt: "Image 2 for project 2",
-    description: "This is an image of the second feature in Project 2."
+    alt: "Modal and Carousel",
+    description: "Modal Wrapper code"
   },
   {
     src: "https://picsum.photos/600/400/?random&blur", // Project 2 Image 3
-    alt: "Image 3 for project 2",
+    alt: "Modal and Carousel",
     description: "Here we show another angle or part of the Project 2."
   }
 ];
@@ -63,7 +63,7 @@ export const projectThreeSlides = [
   {
     src: "https://picsum.photos/600/400/?random", // Project 3 Image 1
     alt: "Image 1 for project 3",
-    description: "Project 3 image 1, illustrating the overall design of the project.",
+    description: "Carousel Code ",
   },
   {
     src: "https://picsum.photos/600/400/?random&grayscale", // Project 3 Image 2

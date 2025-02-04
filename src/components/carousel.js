@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
 
-export const Carousel = ({ data, activeIndex, onSlideChange }) => {
+
+    export const Carousel = ({ data, activeIndex, onSlideChange }) => {
 
     // Handler for the left arrow click
     const handleLeftArrowClick = () => {

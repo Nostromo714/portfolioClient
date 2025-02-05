@@ -21,7 +21,7 @@ return (
         {/* Trigger button image to open the modal */}
         <button 
         onClick={toggleModal} 
-        className="p-4 text-white border-2">
+        className="p-4 text-white border-2 transition-transform duration-300 hover:scale-110">
 
             <img
             src={data[0].src} // Use the first image from the data

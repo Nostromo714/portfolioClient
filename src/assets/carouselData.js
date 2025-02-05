@@ -1,46 +1,61 @@
 // imports for StorySphereImg 
 import storySphereImg1 from '../assets/images/storySphereImg/storySphereImg1.jpg'
-import blogBackEndJpg from '../assets/images/storySphereImg/blogPageCode.jpg'
+import blogBackEndJpg from '../assets/images/storySphereImg/blogBackEnd.jpg'
 import blogPageJpg from '../assets/images/storySphereImg/blogPage.jpg'
 import blogPageCode from '../assets/images/storySphereImg/blogPageCode.jpg'
 import commentJpg from '../assets/images/storySphereImg/commentPage.jpg'
 import commentCode from '../assets/images/storySphereImg/commentCode.jpg'
 
-// Story Sphere data for carousel
+// imports for Modal and Carousel
+import modalAndCarouselImg1 from '../assets/images/modalAndCarouselImg/modalWrapperCode.jpg'
+
+
+//import modalAndCarouselImg1 from '../assets/images/modalAndCarouselImg/carouseCode.jpg'
+
+
+
+
+// Story Sphere Data Presentation 
 export const storySphere = [
   {
     src: storySphereImg1,
-    alt: "Image 1 for carousel",
-    description: "StorySphere is a  ",
+    alt: "StorySphere Home Page",
+    description: "StorySphere is a full-stack blog platform built with the MERN stack. Designed to showcase a client's book and short stories, I worked as a full-stack developer, with a primary focus on developing the blog management system and implementing the comment system for user engagement."
   },
   {
-    src: blogBackEndJpg,
-    alt: "Image 1 for carousel",
-    description: "full-stack blog platform built with the MERN stack, allowing users to read blogs, leave comments, and interact with content in real time.",
-    
+    src: blogBackEndJpg ,
+    alt: "Blog BackEnd Code",
+    description: "I built this backend using Express, MongoDB, and Mongoose to manage and organize blog posts and pages. The app supports full CRUD operations, links blog posts to pages with MongoDB relationships, and efficiently populates data with Mongoose population. It uses modular routes for scalability, implements basic error handling, and structures data with flexible NoSQL models. Upcoming improvements include user authentication, unit testing, enhanced API documentation, and deployment to Heroku or AWS. This project demonstrates my ability to design a scalable backend system with efficient data handling."
   },
   {
     src: blogPageJpg,
-    alt: "Image 1 for carousel",
-    description: "Blog page user side.",
+    alt: "Blog Page Code",
+    description: "The Blog Page showcases blogs from newest to oldest, displaying the title, author, and a preview of the content. Users can click 'Read More' to open and view the full blog post.",
   },
   {
     src: blogPageCode,
     alt: "Image 1 for carousel",
-    description: "blog page.",
+    description: "The BlogPage component uses React hooks like useState and useEffect to fetch blog data from an API. It stores the blogs in state with useState and sorts them by creation date. Each blog displays a preview, and users can click 'Read More' to view the full content, which is conditionally rendered based on the selectedBlog state. The component also uses a CommentSection that receives the selected blog's ID as a prop. Error handling is implemented to manage API fetch failures."
+
+,
   },
   {
     src: commentJpg,
-    alt: "Image 1 for carousel",
-    description: "Comments.",
+    alt: " Full BlogPage With Comment",
+    description:"This component displays the full blog post along with a comment section that enables visitor interaction with the author. To ensure each comment is associated with a specific blog, I implemented a blogId in the comment data. Comments are dynamically added in real-time by updating the state after a successful POST request, allowing the UI to reflect new comments immediately."
+
+,
   },
   {
     src: commentCode,
     alt: "Image 1 for carousel",
-    description: "Comment Code.",
+    description:"In the CommentSection, I utilized React hooks (useState, useEffect) to manage local state and side effects. useState is used for tracking comments, the comment input (newComment), and the author's name (author). useEffect handles side effects by making API calls—specifically, it triggers a GET request to fetch comments for a specific blog whenever the blogId prop changes."
+
+,
   }
 ];
 
+// Modal And Carousel Data Presentation 
 export const projectTwoSlides = [
   {
     src: "https://picsum.photos/600/400/?random", // Project 2 Image 1
@@ -48,7 +63,7 @@ export const projectTwoSlides = [
     description: "Modal With Carousel"
   },
   {
-    src: "https://picsum.photos/600/400/?random&grayscale", // Project 2 Image 2
+    src: modalAndCarouselImg1, 
     alt: "Modal and Carousel",
     description: "Modal Wrapper code"
   },

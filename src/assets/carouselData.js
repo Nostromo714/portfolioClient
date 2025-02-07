@@ -70,7 +70,7 @@ export const projectTwoSlides = [
   {
     src: carouselCode,   //image 3
     alt: "Carousel Code",
-    description: "This Carousel component displays a series of images with descriptions, allowing users to navigate between slides using Bootstrap icons (BsArrowLeftCircle and BsArrowRightCircle). The active slide is controlled via props (activeIndex), and the onSlideChange function updates the index when arrows are clicked. Arrow clicks trigger index adjustments, ensuring smooth transitions through the slides. The layout is centered with responsive styling using Tailwind CSS, while the Bootstrap icons are styled with hover effects for improved user experience.2."
+    description: "This Carousel component displays a series of images with descriptions, (witch you are reading right now), allowing users to navigate between slides using Bootstrap icons (BsArrowLeftCircle and BsArrowRightCircle). The active slide is controlled via props (activeIndex), and the onSlideChange function updates the index when arrows are clicked. Arrow clicks trigger index adjustments, ensuring smooth transitions through the slides. The layout is centered with responsive styling using Tailwind CSS, while the Bootstrap icons are styled with hover effects for improved user experience.2."
   }
 ];
   

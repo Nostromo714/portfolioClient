@@ -23,7 +23,7 @@ const ContactForm = () => {
         setStatus('Sending...');
 
         try {
-            const response = await fetch('http://localhost:5000/api/contact', {
+            const response = await fetch('http://localhost:4000/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -32,12 +32,11 @@ const ContactForm = () => {
             });
 
             const result = await response.json();
-
             if (result.success) {
-                setStatus('Message sent successfully!');
+                setStatus(result.message);  // Display the success message from the backend
                 setFormData({ name: '', email: '', message: '' }); // Clear form
             } else {
-                setStatus('Something went wrong, please try again.');
+                setStatus('Something went wrong,this is from the front end.');
             }
         } catch (error) {
             setStatus('Error: Could not send message.');

@@ -11,8 +11,8 @@ import ScrollToSectionButton from '../components/scrollToSectionButton';
 import pcImage from '../assets/images/flipCard/90s_computer.jpg';
 import computerModern from '../assets/images/flipCard/computerModern.jpg'
 import { storySphere } from "../assets/carouselData"
-import { projectTwoSlides } from "../assets/carouselData"
-import { projectThreeSlides } from "../assets/carouselData"
+import { modalCarousel } from "../assets/carouselData"
+import { contactForm } from "../assets/carouselData"
 import { ModalWrapper } from "../components/modalWrapper";
 
 
@@ -20,12 +20,6 @@ import { ModalWrapper } from "../components/modalWrapper";
 import FlipCard from "../components/flipCard";
 
 const HomePage = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // State to control the modal visibility
-
-// Handle modal visibility
-  //const toggleModal = () => {
-//setIsModalOpen(!isModalOpen);  // Toggle the modal open/close
- // };
   
   // Create a ref for the section you want to scroll to
   const nextSectionRef = useRef(null);
@@ -148,17 +142,17 @@ const HomePage = () => {
         title="MongoDB, Express.js, React, Node.js" />
         </div>
 
-        {/* project 2 */}
+        {/* Modal Wrapper and Carousel */}
         <div className=" flex h-[400px] ">
         <ModalWrapper 
-        data={projectTwoSlides} 
-        title="React JS, Tailwind CSS, Bootstrap" />
+        data={modalCarousel} 
+        title="React JS, Tailwind CSS, Bootstrap, created from scratch" />
         </div>
 
-        {/* project 3 */}
+        {/* Contact Form */}
         <div className="flex h-[400px]" >
         <ModalWrapper 
-        data={projectThreeSlides} 
+        data={contactForm} 
         title="MERN Stack, tailwind CSS, Nodemailer " />
         </div>
       </section>

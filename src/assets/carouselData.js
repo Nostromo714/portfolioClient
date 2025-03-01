@@ -58,7 +58,7 @@ export const storySphere = [
 ];
 
 // Modal With Carousel Presentation 
-export const projectTwoSlides = [
+export const modalCarousel = [
   {
     src: firstModalImg, // image 1
     alt: "Modal and Carousel",
@@ -76,7 +76,7 @@ export const projectTwoSlides = [
   }
 ];
   
-export const projectThreeSlides = [
+export const contactForm = [
   {
     src: contactForm1, // Project 3 Image 1
     alt: "contact form submission ",

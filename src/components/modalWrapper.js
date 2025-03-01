@@ -39,7 +39,7 @@ return (
                     onClick={toggleModal}  // Close modal on outside click
                 >
                     <div
-                        className="relative bg-b-black  w-full sm:w-[80%] md:w-[70%] lg:w-[60%] h-[80%] rounded-lg flex flex-col justify-center items-center"
+                        className="relative bg-b-black  w-[80%] sm:w-[80%] md:w-[70%] lg:w-[60%] max-w-[1200px] max-h-[800px] rounded-lg flex flex-col justify-center items-center overflow-auto"
                         onClick={(e) => e.stopPropagation()}  // Prevent modal close on inner content click
                     >
 

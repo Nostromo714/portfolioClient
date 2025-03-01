@@ -133,7 +133,7 @@ const HomePage = () => {
       </section> 
 
       {/* 4th section ( Projects Gallery Modal/Carousel )*/}
-      <section className=" flex flex-col md:flex-row gap-4 pt-20 ">
+      <section className=" flex flex-col md:flex-row gap-4 pt-20 p-20">
 
         {/* project Story Sphere */}
         <div className=" flex h-[400px] ">

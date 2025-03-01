@@ -152,14 +152,14 @@ const HomePage = () => {
         <div className=" flex h-[400px] ">
         <ModalWrapper 
         data={projectTwoSlides} 
-        title="project 2" />
+        title="React JS, Tailwind CSS, Bootstrap" />
         </div>
 
         {/* project 3 */}
         <div className="flex h-[400px]" >
         <ModalWrapper 
         data={projectThreeSlides} 
-        title="Project 3" />
+        title="MERN Stack, tailwind CSS, Nodemailer " />
         </div>
       </section>
 

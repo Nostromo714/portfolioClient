@@ -136,24 +136,24 @@ const HomePage = () => {
       <section className=" flex flex-col md:flex-row gap-4 pt-20 p-20">
 
         {/* project Story Sphere */}
-        <div className=" flex h-[400px] ">
+        <div className=" flex h-[400px] w-[400px]">
         <ModalWrapper 
         data={storySphere}
-        title="MongoDB, Express.js, React, Node.js" />
+        title="Story Sphere - Blog site focusing on blog management and comment section" />
         </div>
 
         {/* Modal Wrapper and Carousel */}
-        <div className=" flex h-[400px] ">
+        <div className=" flex h-[400px] w-[400px]">
         <ModalWrapper 
         data={modalCarousel} 
-        title="React JS, Tailwind CSS, Bootstrap, created from scratch" />
+        title="Modal Wrapper and carousel - To display projects fast quick and easily. React JS, Tailwind CSS, Bootstrap, created from scratch" />
         </div>
 
         {/* Contact Form */}
-        <div className="flex h-[400px]" >
+        <div className="flex h-[400px] w-[400px]" >
         <ModalWrapper 
         data={contactForm} 
-        title="MERN Stack, tailwind CSS, Nodemailer " />
+        title="Contact Form - Sends notifications to email. MERN Stack, tailwind CSS, Nodemailer " />
         </div>
       </section>
 

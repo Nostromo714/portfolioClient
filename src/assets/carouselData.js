@@ -7,7 +7,7 @@ import commentJpg from '../assets/images/storySphereImg/commentPage.jpg'
 import commentCode from '../assets/images/storySphereImg/commentCode.jpg'
 
 // imports for Modal and Carousel
-import firstModalImg from '../assets/images/modalAndCarouselImg/firstModalImg.jpg'
+import modalWrapperImg from '../assets/images/modalAndCarouselImg/modalWrapperImg.jpg'
 import modalCode from '../assets/images/modalAndCarouselImg/modalWrapperCode.jpg'
 import carouselCode from '../assets/images/modalAndCarouselImg/carouseCode.jpg'
 
@@ -60,7 +60,7 @@ export const storySphere = [
 // Modal With Carousel Presentation 
 export const modalCarousel = [
   {
-    src: firstModalImg, // image 1
+    src: modalWrapperImg, // image 1
     alt: "Modal and Carousel",
     description: "Carousel Nested in Modal. This was my first time building either of these components, so I started with the carousel, followed by the modal. If I were more seasoned, I probably would’ve done it the other way around. The challenge was passing styles down through each part and making sure everything fit together, especially with the carousel nested inside the modal. In the end, it all came together, and it was a valuable learning experience!"
   },

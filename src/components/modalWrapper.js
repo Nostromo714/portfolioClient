@@ -17,7 +17,7 @@ export const ModalWrapper = ({ data , title}) => {
     }    
 
 return (
-    <div className=" flex sm:flex-col">
+    <div className=" flex md:flex-col p-3">
         {/* Trigger button image to open the modal */}
         <button 
         onClick={toggleModal} 
@@ -28,7 +28,7 @@ return (
             alt="Story Sphere Home Page"
             className=" border-2 border-black w-[400px] h-auto object-cover "
             />
-            <p className=" flex bg-slate-700 p-3">{title}</p> {/* Dynamically show the title */}
+            <p className=" flex bg-slate-700 p-3">{title}</p> {/*this is the modalWrapper title, info about each project found in home.js */}
         
         </button>
 

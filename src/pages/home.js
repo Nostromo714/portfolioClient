@@ -11,8 +11,8 @@ import ScrollToSectionButton from '../components/scrollToSectionButton';
 import pcImage from '../assets/images/flipCard/90s_computer.jpg';
 import computerModern from '../assets/images/flipCard/computerModern.jpg'
 import { storySphere } from "../assets/carouselData"
-import { projectTwoSlides } from "../assets/carouselData"
-import { projectThreeSlides } from "../assets/carouselData"
+import { modalCarousel } from "../assets/carouselData"
+import { contactForm } from "../assets/carouselData"
 import { ModalWrapper } from "../components/modalWrapper";
 
 
@@ -20,12 +20,6 @@ import { ModalWrapper } from "../components/modalWrapper";
 import FlipCard from "../components/flipCard";
 
 const HomePage = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // State to control the modal visibility
-
-// Handle modal visibility
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);  // Toggle the modal open/close
-  };
   
   // Create a ref for the section you want to scroll to
   const nextSectionRef = useRef(null);
@@ -33,14 +27,13 @@ const HomePage = () => {
   return (
     <div className="text-white min-h-screen flex flex-col bg-gradient-to-b from-slate-800 via-slate-200 to-black relative bg-cover">
 
-    {/* this is the ( aboutMeButton ) */}
+    {/* this is the ( aboutMeButton.js To Modal ) */}
       <section className=" p-6 flex ">
       <HeaderAboutMe />
       </section>
 
  {/* 1st section ( My Name )*/}
- <section className="flex-center text-center p-4 ">
-        
+ <section className=" flex-center text-center p-4 ">
         <div>
           <h1
             className="text-8xl tracking-tight max-w-full"
@@ -54,86 +47,74 @@ const HomePage = () => {
             LUCY ELIZABETH
           </h1>
           {/* Spacing between h1 and p */}
-          <p className="mt-4 pt-2 text-lg text-white">
+          <p className="mt-4 pt-10 pb-12 text-lg text-white">
             FULL-STACK DEVELOPER, UI-ENGINEER, & DESIGNER
           </p>
 
           {/* ScrollToSectionButton Component */}
-      <section className=" flex justify-center items-center">
-      {/* Use the ScrollToSectionButton component */}
+      <section className="flex justify-center items-center pb-12">
       <ScrollToSectionButton targetRef={nextSectionRef} />
     </section>
         </div>
-
-       
-      
-    
       </section>
 
       {/* 2nd section ( My Expertise with Boxes of description )*/}
-      <section className="h-screen flex flex-col justify-center items-center p-4 pt-20">
-          {/* nextSection for  ScrollToSectionButton */}
+
+      <section className=" h-screen flex flex-col justify-end items-center p-4  pt-2">
+          {/* Target Ref for ScrollToSectionButton */}
         <h1
-          className="text-8xl tracking-tight max-w-full p-10 text-center"
+          className=" flex justify-center text-8xl text-center tracking-tight max-w-full text-center p-10"
           ref={nextSectionRef}
           style={{
             fontFamily: "Poppins, sans-serif",
             fontSize: "8rem",
             textShadow:
               "3px 3px 5px rgba(14, 14, 22, 0.91), 0 0 25px rgba(17, 9, 21, 0.98), 0 0 50px rgba(31, 28, 66, 0.61)",
+              scrollMarginTop: "80px",
           }}
         >
           MY EXPERTISE
         </h1>
-           {/* The next section to scroll to */}
-        
-
-        <div className="flex flex-col sm:flex-row sm:flex-wrap mx-auto max-w-screen-lg mt-10">
+        <div className="flex flex-col sm:flex-row sm:flex-wrap mx-auto max-w-screen-lg mt-10 pb-8">
           {/* Box 1 */}
           <div className="flex-1 p-6 bg-opacity-50 border-2 border-black text-white shadow-md">
             <h2 className="text-xl font-semibold">Software Development</h2>
-            <p>
-              Experenced in developiing both frount and backend technolies.
-              JavaScript, Python,{" "}
+            <p className="pt-5">
+            Experienced in JavaScript, working with both front-end and back-end technologies. From clean, maintainable code to optimized performance, I craft solutions that last.
             </p>
           </div>
 
+          {/* Boxes with description for My Experience */}
           {/* Box 2 */}
           <div className="flex-1 p-6 bg-opacity-50 border-2 border-black text-white shadow-md">
             <h2 className="text-xl font-semibold">Full-Stack Dev MERN Stack</h2>
-            <p>
-              Passionate about UI/UX. Over one year experance in html, css, js
-              react and nodeJS frameworks
+            <p className="pt-5">
+            Building full-stack applications with MongoDB, Express.js, React.js, and Node.js. I focus on creating scalable and responsive web apps with real-time features, user authentication, and secure data handling.
             </p>
           </div>
 
           {/* Box 3 */}
           <div className="flex-1 p-6  bg-opacity-50 border-2 border-black  text-white shadow-md">
             <h2 className="text-xl font-semibold">Web Design</h2>
-            <p>Skilled in creating and desiging with tailwiind css </p>
+            <p className="pt-5">Skilled in designing clean, modern user interfaces with Tailwind CSS, ensuring a smooth user experience from start to finish. I’m passionate about UI/UX design, making sure every detail contributes to an intuitive user journey.</p>
           </div>
           </div>
         </section>
 
       {/* 3rd section ( My Work ) */}
-      <section className="flex flex-col sm:flex-row justify-between gap-10 pb-20">
 
+      <section className="flex flex-col sm:flex-row justify-between gap-10 pb-20 pt-20">
          {/* Left Content (My Work description) */}
         <div className="flex-1 text-center md:text-left flex items-center p-12 mb-10 sm:mb-0">
         <div>
             <h1 className=" text-8xl tracking-tight p-10">
-            {/* Header */}
+            {/* Header for My Work */}
             MY WORK
             </h1>
 
         <div className="  max-1/2 p-10">
         <p className="text-2xl text-black font-bold  leading-relaxed p-4">
-          Built and deployed scalable, responsive web apps with real-time
-          features, focusing on high performance and intuitive interfaces using
-          React.js, Node.js, and MongoDB. <br /> Passionate about creating
-          dynamic, user-centered experiences with secure authentication and
-          efficient data management. Continuously driven by problem-solving and
-          learning to create maintainable, robust code.
+         I build fast, responsive web apps with real-time features using React.js, Node.js, and MongoDB. I’m all about creating smooth, user-friendly experiences with solid security and efficient data handling. I love solving problems and learning along the way to make sure the code I write is clean, scalable, and easy to maintain.
         </p>
         </div>
         </div>
@@ -152,27 +133,27 @@ const HomePage = () => {
       </section> 
 
       {/* 4th section ( Projects Gallery Modal/Carousel )*/}
-      <section className=" flex flex-col md:flex-row gap-4 pt-20 ">
+      <section className=" flex flex-col md:flex-row gap-4 pt-20 p-20">
 
         {/* project Story Sphere */}
-        <div className=" flex h-[400px] ">
+        <div className=" flex h-[400px] w-[400px]">
         <ModalWrapper 
         data={storySphere}
-        title="MongoDB, Express.js, React, Node.js" />
+        title="Story Sphere - Blog site focusing on blog management and comment section" />
         </div>
 
-        {/* project 2 */}
-        <div className=" flex h-[400px] ">
+        {/* Modal Wrapper and Carousel */}
+        <div className=" flex h-[400px] w-[400px]">
         <ModalWrapper 
-        data={projectTwoSlides} 
-        title="project 2" />
+        data={modalCarousel} 
+        title="Modal Wrapper and carousel - To display projects fast quick and easily. React JS, Tailwind CSS, Bootstrap, created from scratch" />
         </div>
 
-        {/* project 3 */}
-        <div className="flex h-[400px]" >
+        {/* Contact Form */}
+        <div className="flex h-[400px] w-[400px]" >
         <ModalWrapper 
-        data={projectThreeSlides} 
-        title="Project 3" />
+        data={contactForm} 
+        title="Contact Form - Sends notifications to email. MERN Stack, tailwind CSS, Nodemailer " />
         </div>
       </section>
 

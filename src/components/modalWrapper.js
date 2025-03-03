@@ -11,23 +11,24 @@ export const ModalWrapper = ({ data , title}) => {
         setIsModalOpen(!isModalOpen);
     };
 
+    // Function  to update the active index
     const handleCarouselChange = (index) => {
-        setActiveIndex(index); // update the active index
+        setActiveIndex(index); 
     }    
 
 return (
-    <div className=" flex sm:flex-col">
-        {/* Trigger button or image to open the modal */}
+    <div className=" flex md:flex-col p-3">
+        {/* Trigger button image to open the modal */}
         <button 
         onClick={toggleModal} 
-        className="p-4 text-white border-2">
+        className="p-4 text-white border-2 transition-transform duration-300 hover:scale-110">
 
             <img
             src={data[0].src} // Use the first image from the data
             alt="Story Sphere Home Page"
             className=" border-2 border-black w-[400px] h-auto object-cover "
             />
-            <p className=" flex bg-slate-700 p-3">{title}</p> {/* Dynamically show the title */}
+            <p className=" flex bg-slate-700 p-3">{title}</p> {/*this is the modalWrapper title, info about each project found in home.js */}
         
         </button>
 
@@ -38,7 +39,7 @@ return (
                     onClick={toggleModal}  // Close modal on outside click
                 >
                     <div
-                        className="relative bg-b-black  w-full sm:w-[80%] md:w-[70%] lg:w-[60%] h-[80%] rounded-lg flex flex-col justify-center items-center"
+                        className="relative bg-b-black  w-[80%] sm:w-[80%] md:w-[70%] lg:w-[60%] max-w-[1200px] max-h-[800px] rounded-lg flex flex-col justify-center items-center overflow-auto"
                         onClick={(e) => e.stopPropagation()}  // Prevent modal close on inner content click
                     >
 

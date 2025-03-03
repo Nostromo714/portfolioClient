@@ -12,7 +12,9 @@ const toggleModal = () => {
 };
 
 return (
-<section className=" w-full h-[200px] flex justify-center items-center  ">
+<section className=" w-full h-[200px] flex justify-center items-center"
+>
+  {/* aboutMaeButton */}
   <button
     onClick={toggleModal}
     className="text-lg text-white font-bold relative group"
@@ -41,8 +43,8 @@ return (
             <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 p-7 rounded-lg">
               <div className="text-center max-w-lg">
               <h2 className="text-2xl font-bold text-white"></h2>
-            <p> I'm Lucy Elizabeth, a passionate full-stack developer with a love for UI/UX design.
-    I specialize in creating dynamic, user-centered web applications using modern technologies like React, Node.js, and MongoDB.
+            <p> Hi there! I’m Lucy Elizabeth, a full-stack developer who’s deeply passionate about coding and problem-solving. But when I’m not diving into code, you’ll find me on an adventure with my family—whether I’m roller skating with my daughter, teaming up with my son for a co-op game, or exploring the outdoors with my partner. I’m also a proud stepmom to a musician and love spending time with my horse. In my free time, you’ll often find me learning new things on CodinGame or TryHackMe, or helping out by horse-sitting for family and friends. Life is about balance for me—mixing my love for technology with the things that bring me joy and connect me to the people I love most.
+    
     Let's build something amazing together!
     </p>
      </div>

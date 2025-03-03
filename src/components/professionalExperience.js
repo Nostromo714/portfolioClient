@@ -5,15 +5,15 @@ import ToggleBox from "./toggleBox";
 const jobExperiences = [
     {
         title: 'Jr Fullstack Developer Student At Upright Education',
-        description: 'Experienced in developing both front and backend technologies. JavaScript, Python, React, Node.js.',
+        description: 'I’m experienced in developing both front-end and back-end technologies, with a strong focus on JavaScript, Python, React, and Node.js. Throughout my boot camp experience, I collaborated with a team using Agile methodologies and Jira to stay organized and deliver high-quality projects. This hands-on experience has strengthened my ability to work efficiently in dynamic, fast-paced environments while maintaining a focus on coding best practices.',
       },
       {
         title: 'Assistant F&B Manager At HMSHOST',
-        description: 'Managed a team of food and beverage staff, ensuring smooth operations and high customer satisfaction.',
+        description: 'I have extensive experience managing food and beverage teams at various locations, including Burger King, Popeyes, and as a Manager at Starbucks in a plaza setting. My role involved overseeing smooth daily operations, ensuring high levels of customer satisfaction, managing inventory and ordering supplies, and maintaining communication with the district manager via email. Additionally, I took on extra responsibilities, providing training for new staff to improve team efficiency and service quality across the plaza.',
       },
       {
         title: 'Manager for Starbucks at HMSHOST',
-        description: 'Led a team of baristas, maintaining high standards of service and customer interaction while managing day-to-day operations.',
+        description: 'I began my career at Starbucks as a barista and worked my way up to a management role, where I led a team of baristas while ensuring the highest standards of service and customer interaction. I successfully built a strong, motivated team and turned around our performance by utilizing Starbucks systems and adhering to company guidelines. This leadership allowed us to overcome challenges and emerge from low-performing zones, ultimately becoming one of the top Starbucks locations in the area.',
       }
 
     ];

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
 
-export const Carousel = ({ data, activeIndex, onSlideChange }) => {
+
+    export const Carousel = ({ data, activeIndex, onSlideChange }) => {
 
     // Handler for the left arrow click
     const handleLeftArrowClick = () => {
@@ -25,7 +25,7 @@ export const Carousel = ({ data, activeIndex, onSlideChange }) => {
         className=" absolute left-6 top-1/2 transform text-gray-400 text-4xl cursor-pointer rounded-full z-10 hover-pointer hover:opacity-50 shadow-lg" />
 
          {/* Image + Description Wrapper */}
-         <div className="border-black border-2 max-w-[80wh] max-h-[70vw] flex flex-col justify-center items-center"> 
+         <div className="border-black border-2 max-w-[800px] max-h-[700px] flex flex-col justify-center items-center"> 
 
         <img 
         src={data[activeIndex].src} 

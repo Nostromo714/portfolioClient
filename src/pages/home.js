@@ -166,11 +166,11 @@ const HomePage = () => {
       {/* 6th Section (Contact Me) */}
 
       <section className="flex flex-col sm:flex-row justify-between gap-10 p-5">
-        <div className="w-full sm:w-1/2 p-9"> 
+        <div className="w-full sm:w-1/2 p-4 pt-20"> 
         <ContactForm />  
         </div>
 
-        <div className=" w-full sm:w-1/2 p-9 pt-20">
+        <div className=" w-full sm:w-2/3 p-4 pt-20">
         <Testimonials /> 
         </div>
       </section>

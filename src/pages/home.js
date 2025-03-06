@@ -1,10 +1,11 @@
 // /src/pages/home.js
 import React, { useState, useRef } from "react";
 import HeaderAboutMe from "../components/aboutMeButton";
+import ScrollToSectionButton from '../components/scrollToSectionButton';
 import ProfessionalExperience from "../components/professionalExperience";
 import ContactForm from '../components/contactForm';
 import Testimonials from "../components/testimonials"
-import ScrollToSectionButton from '../components/scrollToSectionButton';
+import Footer from '../components/footer';
 
 
 // import img
@@ -174,8 +175,9 @@ const HomePage = () => {
         <Testimonials /> 
         </div>
       </section>
-
-      <footer></footer>
+      <div>
+      <Footer />
+      </div>
     </div>
   );
 };

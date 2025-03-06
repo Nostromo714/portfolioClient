@@ -1,10 +1,11 @@
 // /src/pages/home.js
 import React, { useState, useRef } from "react";
 import HeaderAboutMe from "../components/aboutMeButton";
+import ScrollToSectionButton from '../components/scrollToSectionButton';
 import ProfessionalExperience from "../components/professionalExperience";
 import ContactForm from '../components/contactForm';
 import Testimonials from "../components/testimonials"
-import ScrollToSectionButton from '../components/scrollToSectionButton';
+import Footer from '../components/footer';
 
 
 // import img
@@ -166,16 +167,17 @@ const HomePage = () => {
       {/* 6th Section (Contact Me) */}
 
       <section className="flex flex-col sm:flex-row justify-between gap-10 p-5">
-        <div className="w-full sm:w-1/2 p-9"> 
+        <div className="w-full sm:w-1/2 p-4 pt-20"> 
         <ContactForm />  
         </div>
 
-        <div className=" w-full sm:w-1/2 p-9 pt-20">
+        <div className=" w-full sm:w-2/3 p-4 pt-20">
         <Testimonials /> 
         </div>
       </section>
-
-      <footer></footer>
+      <div>
+      <Footer />
+      </div>
     </div>
   );
 };

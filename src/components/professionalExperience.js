@@ -21,15 +21,17 @@ const jobExperiences = [
     const ProfessionalExperience = () => {
         return (
             <section>
+              <div className="flex justify-center text-center p-4 ">
             <h1 
-        className="text-8xl flex justify-center tracking-tight max-w-full p-10 "
+        className="text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] xl:text-[5rem] tracking-tight max-w-full tracking-tight max-w-full"
         style={{
         fontFamily: "Poppins, sans-serif",
-        fontSize: "4rem",
+        
         textShadow: "3px 3px 5px rgba(14, 14, 22, 0.91), 0 0 25px rgba(17, 9, 21, 0.98), 0 0 50px rgba(31, 28, 66, 0.61)",
         }}>
         Professional Experience
       </h1>
+      </div>
 
        {/* Using ToggleBox for job experiences */}
        <div className="flex justify-center mt-8 ">

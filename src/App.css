@@ -12,7 +12,7 @@
     height: 100%;
     transform-style: preserve-3d; /* ensure 3D effect */
     position: absolute;
-    animation: flipAnimation 10s linear infinite;
+    animation: flipAnimation 30s linear infinite;
 }
 .flip-card-front, .flip-card-back {
     position: absolute;

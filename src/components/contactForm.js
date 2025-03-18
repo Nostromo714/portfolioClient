@@ -39,7 +39,7 @@ const ContactForm = () => {
                 setStatus('Something went wrong,this is from the front end.');
             }
         } catch (error) {
-            setStatus('Error: Could not send message.');
+            setStatus('Error: Could not send message from the front end.');
         }
      };
 

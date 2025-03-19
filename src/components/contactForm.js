@@ -18,6 +18,9 @@ const ContactForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        // Display the API URL to ensure it's being read correctly
+  console.log("API URL:", process.env.REACT_APP_API_URL);
         
         // Display a loading message while the form is being sent
         setStatus('Sending...');

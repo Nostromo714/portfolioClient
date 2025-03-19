@@ -21,12 +21,16 @@ const ContactForm = () => {
 
         // Display the API URL to ensure it's being read correctly
   console.log("API URL:", process.env.REACT_APP_API_URL);
+
+   // Ensure the base URL does not have a trailing slash
+   const apiUrl = process.env.REACT_APP_API_URL;
+   const apiUrlWithNoTrailingSlash = apiUrl.endsWith("/") ? apiUrl.slice(0, -1) : apiUrl;
         
         // Display a loading message while the form is being sent
         setStatus('Sending...');
 
         try {
-            const response = await fetch(`${process.env.REACT_APP_API_URL}/contact`, {
+            const response = await fetch(`${apiUrlWithNoTrailingSlash}/contact`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -1,5 +1,7 @@
 import React from "react";
+
 import computerModern from '../assets/images/flipCard/computerModern.jpg'
+import karinImg from '../assets/images/testimonials/karin.jpg'
 
 const Testimonials = () => {
 
@@ -45,7 +47,7 @@ const Testimonials = () => {
                {/* IMAGE 2 */}
             <div className="flex flex-col items-center sm:items-center sm:-auto ">
             <img
-            src={computerModern}
+            src={karinImg}
             alt="computer"
             className=" border-2 border-black rounded-full object-cover w-32 h-32 "
               />

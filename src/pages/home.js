@@ -1,12 +1,13 @@
 // /src/pages/home.js
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
+
 import HeaderAboutMe from "../components/aboutMeButton";
 import ScrollToSectionButton from '../components/scrollToSectionButton';
 import ProfessionalExperience from "../components/professionalExperience";
 import ContactForm from '../components/contactForm';
 import Testimonials from "../components/testimonials"
 import Footer from '../components/footer';
-
+import HeroProject from "../components/heroProject";
 
 // import img
 import pcImage from '../assets/images/flipCard/90s_computer.jpg';
@@ -15,6 +16,7 @@ import { storySphere } from "../assets/carouselData"
 import { modalCarousel } from "../assets/carouselData"
 import { contactForm } from "../assets/carouselData"
 import { ModalWrapper } from "../components/modalWrapper";
+
 
 //import HoverModal from "../components/aboutModal";
 import FlipCard from "../components/flipCard";
@@ -132,6 +134,11 @@ const HomePage = () => {
       </div>
       </section> 
 
+          <section className=" p-4 ">
+            <HeroProject />
+          </section>
+        
+      
       {/* 4th section (Projects Gallery Modal/Carousel) */}
       <section className="flex justify-center flex-col md:flex-row gap-4 pt-20 p-20">
         {/* Project Story Sphere */}

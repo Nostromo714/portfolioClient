@@ -1,12 +1,12 @@
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 
 const ScrollToSectionButton = ({ targetRef }) => {
   // Function to handle the scroll
   const scrollToNextSection = () => {
     if (targetRef.current) {
       targetRef.current.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start', // Align the section at the top of the viewport
+        behavior: "smooth",
+        block: "start", // Align the section at the top of the viewport
       });
     }
   };

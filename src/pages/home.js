@@ -46,7 +46,7 @@ const HomePage = () => {
           </h1>
           {/* Spacing between h1 and p */}
           <p className="mt-4 pt-10 pb-12 text-lg text-white">
-            FULL-STACK DEVELOPER, UI-ENGINEER, & DESIGNER
+            FULL-STACK DEVELOPER | UI-FOCUSED ENGINEER
           </p>
 
           {/* ScrollToSectionButton Component */}
@@ -75,34 +75,26 @@ const HomePage = () => {
         <div className="flex flex-col sm:flex-row sm:flex-wrap mx-auto max-w-screen-lg mt-10 pb-8">
           {/* Box 1 */}
           <div className="flex-1 p-6 bg-opacity-50 border-2 border-black text-white shadow-md">
-            <h2 className="text-xl font-semibold">Software Development</h2>
+            <h2 className="text-xl font-semibold">Full-Stack Development (MERN)</h2>
             <p className="pt-5">
-              I am an experienced in JavaScript, working with both front-end and
-              back-end technologies. From clean, maintainable code to optimized
-              performance, I craft solutions that last.
+              I build responsive web applications using React, Node.js, Express, and MongoDB, with a focus on clean architecture, API design, and secure authentication.
             </p>
           </div>
 
           {/* Boxes with description for My Experience */}
           {/* Box 2 */}
           <div className="flex-1 p-6 bg-opacity-50 border-2 border-black text-white shadow-md">
-            <h2 className="text-xl font-semibold">Full-Stack Dev MERN Stack</h2>
+            <h2 className="text-xl font-semibold">Frontend Development</h2>
             <p className="pt-5">
-              I Build full-stack applications with MongoDB, Express.js,
-              React.js, and Node.js. I focus on creating scalable and responsive
-              web apps with real-time features, user authentication, and secure
-              data handling.
+              I create responsive, accessible interfaces using React and Tailwind CSS with attention to usability and performance.
             </p>
           </div>
 
           {/* Box 3 */}
           <div className="flex-1 p-6  bg-opacity-50 border-2 border-black  text-white shadow-md">
-            <h2 className="text-xl font-semibold">Web Design</h2>
+            <h2 className="text-xl font-semibold">Backend Development</h2>
             <p className="pt-5">
-              I am skilled in designing clean, modern user interfaces with
-              Tailwind CSS, ensuring a smooth user experience from start to
-              finish. I’m passionate about UI/UX design, making sure every
-              detail contributes to an intuitive user journey.
+              I develop RESTful APIs using Node.js and Express, working with databases like MongoDB and MySQL.
             </p>
           </div>
         </div>
@@ -116,23 +108,12 @@ const HomePage = () => {
           <div>
             <h1 className=" text-8xl tracking-tight p-10">
               {/* Header for My Work */}
-              MY WORK
+              ABOUT THIS PORTFOLIO
             </h1>
 
             <div className=" max-1/2 p-10">
               <p className="text-2xl tracking-tight text-black font-bold  leading-relaxed p-4">
-                Below, you can click on and preview some of the work I’ve
-                created. You can also find the link to my GitHub at the bottom
-                of this site to view the updated code for this portfolio, as
-                well as for the projects I’ve presented. I've created a FlipCard
-                here to demonstrate the visual evolution of technology — from
-                the older computer, which represents my family's first computer,
-                to the one I use every day in the present. My love for the
-                fast-paced, ever-evolving world of computer technology has
-                become a true passion. Learning how to create, adapt, and come
-                up with solutions to challenges excites me and motivates me to
-                keep pushing forward. I would love to continue creating,
-                building, and learning alongside an enthusiastic team.
+               This portfolio showcases full-stack applications and UI-focused projects built using React, Node.js, and modern web technologies. Each project demonstrates my focus on clean code, user experience, and real-world functionality including authentication, API integration, and dynamic interfaces. Below are selected projects demonstrating my work in full-stack development and UI engineering. 
               </p>
             </div>
           </div>

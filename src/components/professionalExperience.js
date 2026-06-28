@@ -6,17 +6,17 @@ const jobExperiences = [
   {
     title: "Jr Fullstack Developer Student At Upright Education",
     description:
-      "I’m experienced in developing both front-end and back-end technologies, with a strong focus on JavaScript, Python, React, and Node.js. Throughout my boot camp experience, I collaborated with a team using Agile methodologies and Jira to stay organized and deliver high-quality projects. This hands-on experience has strengthened my ability to work efficiently in dynamic, fast-paced environments while maintaining a focus on coding best practices.",
+      "Built full-stack web applications using React, Node.js, Express and MongoDB. Collaborated in Agile teams using Git and Jira. Focused on responsive UI development, REST APIs, and database integration while following clean code and debugging best practices.",
   },
   {
     title: "Assistant F&B Manager At HMSHOST",
     description:
-      "I have extensive experience managing food and beverage teams at various locations, including Burger King, Popeyes, and as a Manager at Starbucks in a plaza setting. My role involved overseeing smooth daily operations, ensuring high levels of customer satisfaction, managing inventory and ordering supplies, and maintaining communication with the district manager via email. Additionally, I took on extra responsibilities, providing training for new staff to improve team efficiency and service quality across the plaza.",
+      "Managed daily operations across multiple food service locations including Burger King, Popeyes, and Starbucks. Oversaw inventory, scheduling, and team training while maintaining strong customer service standards and communication with district management.",
   },
   {
     title: "Manager for Starbucks at HMSHOST",
     description:
-      "I began my career at Starbucks as a barista and worked my way up to a management role, where I led a team of baristas while ensuring the highest standards of service and customer interaction. I successfully built a strong, motivated team and turned around our performance by utilizing Starbucks systems and adhering to company guidelines. This leadership allowed us to overcome challenges and emerge from low-performing zones, ultimately becoming one of the top Starbucks locations in the area.",
+      "Promoted from barista to store manager, leading a team in daily operations and customer service. Improved store performance through structured leadership, operational consistency, and adherence to company standards.",
   },
 ];
 

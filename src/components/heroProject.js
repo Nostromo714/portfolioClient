@@ -14,8 +14,17 @@ const HeroProject = () => {
             scrollMarginTop: "80px",
           }}
         >
-          MY PROJECTS
+          MY PROJECTS 
         </h2>
+        <h3 className="flex justify-center text-xl sm:text-2xl md:text-5xl font-semibold text-gray-800 mb-4"
+        style={{
+            fontFamily: "Poppins, sans-serif",
+            textShadow:
+              "3px 3px 5px rgba(172, 172, 200, 0.91), 0 0 25px rgba(93, 91, 94, 0.98), 0 0 50px rgba(232, 231, 241, 0.61)",
+            scrollMarginTop: "80px",
+          }}>
+          COMPONENT SHOWCASE
+        </h3>
         <div className="flex items-center justify-center gap-4 pb-8">
           <a
             href="https://wickedsignfab.com/"
@@ -25,7 +34,9 @@ const HeroProject = () => {
             <h2
               className="flex justify-center sm:text-2xl
                 md:text-3xl
-                lg:text-4xl text-gray-700 font-bold mt-4 tracking-tight hover:text-green-600 cursor-pointer transition-colors duration-300 hover:scale-110 pr-5"
+                lg:text-4xl text-gray-700 font-bold mt-4 tracking-tight hover:text-green-600 
+                 hover:scale-105
+                 cursor-pointer transition-colors duration-300 hover:scale-110 "
               style={{
                 fontFamily: "poppins, sans-serif",
               }}
@@ -36,7 +47,9 @@ const HeroProject = () => {
 
           <a
             href="https://github.com/Nostromo714/wickedFabrication"
-            className="text-gray-700 "
+            className=" mt-4 mr-4 text-gray-700 hover:text-green-600 
+            hover:scale-110
+            transition-colors duration-300"
           >
             <i className="fa-brands fa-github text-4xl p-2  hover:text-green-600  hover:scale-110 transition-all duration-300"></i>
           </a>

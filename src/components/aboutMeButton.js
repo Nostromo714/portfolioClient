@@ -37,23 +37,21 @@ const Header = () => {
             //onClick={(e => e.stopPropagation())} //prevent closing when clicking inside the modal
           >
             {/* Overlay description */}
-            <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 p-7 rounded-lg">
+            <div className="absolute inset-0 bg-black/60 flex justify-center items-center p-7 rounded-lg">
               <div className="text-center max-w-lg">
                 <h2 className="text-2xl font-bold text-white"></h2>
                 <p>
-                  {" "}
-                  Hi there! I’m Lucy Elizabeth, a full-stack developer who’s
-                  deeply passionate about coding and problem-solving. But when
-                  I’m not diving into code, you’ll find me on an adventure with
-                  my family—whether I’m roller skating with my daughter, teaming
-                  up with my son for a co-op game, or exploring the outdoors
-                  with my partner. I’m also a proud stepmom to a musician and
-                  love spending time with my horse. In my free time, you’ll
-                  often find me learning new things on CodinGame or TryHackMe,
-                  or helping out by horse-sitting for family and friends. Life
-                  is about balance for me—mixing my love for technology with the
-                  things that bring me joy and connect me to the people I love
-                  most. Let's build something amazing together!
+                  {" "}Hi, I’m Lucy Elizabeth — a full-stack developer who came into tech through persistence, curiosity, and real-life experience.
+
+                  My path into software development wasn’t traditional. I grew into responsibility later in life, and my family became my biggest motivation. Along the way, I discovered a strong passion for coding — especially solving problems, finding bugs, and building applications that work.
+
+                  I’ve pushed myself to learn technologies like the MERN stack, full-stack application development, and headless CMS architecture. That mindset of curiosity and persistence has been the most important part of my growth as a developer.
+
+                  What I enjoy most about development is the balance between creativity and logic — breaking down complex problems and turning them into clean, functional solutions.
+
+                  Outside of development, I enjoy spending time with my family, roller skating, and caring for my horses and cactus collection. I value curiosity, patience, and consistency — qualities that also shape how I approach learning and problem-solving in tech.
+
+                  I’m looking for a role where I can continue to grow as a developer while contributing to a team that values collaboration, learning, and thoughtful problem-solving.
                 </p>
               </div>
             </div>

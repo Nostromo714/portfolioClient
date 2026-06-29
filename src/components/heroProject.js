@@ -1,5 +1,5 @@
 import React from "react";
-import heroProjectImage from "../assets/images/wickedFabrication/homePageWicked.png";
+import heroProjectImage from "../assets/images/wickedFabrication/wickedSignFab.png";
 
 const HeroProject = () => {
   return (

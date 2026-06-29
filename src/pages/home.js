@@ -105,18 +105,17 @@ const HomePage = () => {
       <section className="flex flex-col sm:flex-row justify-between gap-10 pb-20 pt-20">
         {/* Left Content (My Work description) */}
         <div className="flex-1 text-center md:text-left flex items-center p-12 mb-10 sm:mb-0">
-          <div>
-            <h1 className=" text-8xl tracking-tight p-10">
-              {/* Header for My Work */}
-              ABOUT THIS PORTFOLIO
-            </h1>
+         <div>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl tracking-tight p-4 sm:p-6 md:p-10 text-center">
+            ABOUT THIS PORTFOLIO
+          </h1>
 
-            <div className=" max-1/2 p-10">
-              <p className="text-2xl tracking-tight text-black font-bold  leading-relaxed p-4">
-               This portfolio showcases full-stack applications and UI-focused projects built using React, Node.js, and modern web technologies. Each project demonstrates my focus on clean code, user experience, and real-world functionality including authentication, API integration, and dynamic interfaces. Below are selected projects demonstrating my work in full-stack development and UI engineering. 
-              </p>
-            </div>
+          <div className="w-full max-w-3xl mx-auto p-4 sm:p-6 md:p-10">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl tracking-tight text-black font-medium leading-relaxed text-center md:text-left">
+              This portfolio showcases full-stack applications and UI-focused projects built using React, Node.js, and modern web technologies. Each project demonstrates my focus on clean code, user experience, and real-world functionality including authentication, API integration, and dynamic interfaces. Below are selected projects demonstrating my work in full-stack development and UI engineering.
+            </p>
           </div>
+        </div>
         </div>
 
         {/* Right content in My work (Image Flip Card) */}

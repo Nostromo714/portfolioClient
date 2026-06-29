@@ -77,7 +77,7 @@ const HomePage = () => {
           <div className="flex-1 p-6 bg-opacity-50 border-2 border-black text-white shadow-md">
             <h2 className="text-xl font-semibold">Full-Stack Development (MERN)</h2>
             <p className="pt-5">
-              I build responsive web applications using React, Node.js, Express, and MongoDB, with a focus on clean architecture, API design, and secure authentication.
+              I build responsive web applications using React, Node.js, Express, and MongoDB, with a focus on clean architecture, API design, and secure authentication. I also integrate headless CMS platforms like Drupal using JSON:API to manage dynamic content for frontend applications.
             </p>
           </div>
 
@@ -134,7 +134,7 @@ const HomePage = () => {
       </section>
 
       {/* 4th section (Projects Gallery Modal/Carousel) */}
-      <section className="flex justify-center flex-col md:flex-row gap-4 pt-20 p-20">
+      <section className="flex justify-center flex-col md:flex-row gap-4 pt-10 ">
         {/* Project Story Sphere */}
         <div className="flex h-[400px] w-full sm:w-[400px]">
           <ModalWrapper
